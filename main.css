@@ -86,23 +86,17 @@
   }
 
 /* For page-switching animation */
-.page {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-/* Animation for entering the page */
-.page-enter {
-  transform: translateX(100%);
-}
-
-/* Animation for leaving the page */
-.page-leave {
-  transform: translateX(-100%);
+.fade-in {
+  animation: fadeIn 0.5s;
 }
 
   /* .btn {

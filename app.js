@@ -19,37 +19,26 @@ switcher.addEventListener('click', function() {
 
 // Switching page animation
 
-// Get all the links that trigger page transitions
-const pageLinks = document.querySelectorAll('a[data-page-link]');
-
-// Add click event listeners to the links
-pageLinks.forEach(link => {
-  link.addEventListener('click', handlePageTransition);
-});
-
-// Handle page transition
-function handlePageTransition(e) {
-  e.preventDefault();
-
-  // Get the target page
-  const targetPage = e.target.getAttribute('href');
-
-  // Add the 'page-leave' class to the current page
-  const currentPage = document.querySelector('.page.active');
-  currentPage.classList.add('page-leave');
-
-  // Remove the 'active' class from the current page after the animation completes
-  setTimeout(() => {
-    currentPage.classList.remove('active');
-  }, 500);
-
-  // Add the 'page-enter' class to the target page
-  const nextPage = document.querySelector(targetPage);
-  nextPage.classList.add('page-enter');
-
-  // Add the 'active' class to the target page after a short delay
-  setTimeout(() => {
-    nextPage.classList.add('active');
-    nextPage.classList.remove('page-enter');
-  }, 10);
-}
+// Wait for the page to load
+window.addEventListener('load', function () {
+    // Add an event listener to the menu links
+    var links = document.querySelectorAll('.menu-link');
+    links.forEach(function (link) {
+      link.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent the default link behavior
+        var href = this.getAttribute('href'); // Get the target page URL
+        animatePageSwitch(href); // Call the animation function
+      });
+    });
+  });
+  
+  // Animation function
+  function animatePageSwitch(href) {
+    var content = document.querySelector('.content'); // Assuming a container element with the class "content"
+    content.classList.add('fade-in'); // Apply the fade-in animation class
+  
+    // Wait for the animation to finish
+    setTimeout(function () {
+      window.location.href = href; // Redirect to the target page
+    }, 500); // Adjust the duration of the animation as needed
+  }
