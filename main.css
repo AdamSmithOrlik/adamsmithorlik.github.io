@@ -56,8 +56,8 @@
   */
 
   h1 {
-    background-color: var(--white);
-}
+      background-color: lavender;
+  }
 
   h2 {
       background-color: var(--white);
