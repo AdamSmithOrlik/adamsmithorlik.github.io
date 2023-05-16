@@ -17,6 +17,13 @@ switcher.addEventListener('click', function() {
 
 });
 
+var hamburger = document.querySelector('.hamburger');
+var menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', function () {
+  menu.classList.toggle('active');
+});
+
 // Switching page animation
 
 // Wait for the page to load
