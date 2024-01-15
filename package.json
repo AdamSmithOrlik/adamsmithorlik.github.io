@@ -1,8 +1,8 @@
 {
- "homepage": "https://AdamSmithOrlik.github.io/adamsmithorlik.github.io/",
   "name": "website-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://AdamSmithOrlik.github.io/adamsmithorlik.github.io/",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",
