@@ -1,0 +1,18 @@
+{
+    "home": {
+      "title": "Home",
+      "content": "This is the Home section."
+    },
+    "about": {
+      "title": "About",
+      "content": "This is my about section. Here you can find information about me..."
+    },
+    "research": {
+      "title": "Research",
+      "content": "This is the Research section."
+    },
+    "blog": {
+      "title": "Blog",
+      "content": "This is the Blog section."
+    }
+  }

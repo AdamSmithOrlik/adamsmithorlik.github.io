@@ -1,12 +1,43 @@
-.footer {
+/* .footer {
     text-align: center;
     padding: 0px;
-    background-color: transparent; /* Or any color you prefer */
-    color: rgb(143, 143, 143); /* Or any color you prefer */
+    background-color: transparent;
+    color: rgb(143, 143, 143); 
     position: fixed;
     bottom: 0;
     width: 100%;
-    left: 0; /* Add this line */
-    right: 0; /* Add this line */
+    left: 0; 
+    right: 0; 
     bottom: 0;
+} */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(143, 143, 143); 
+    margin: 0;
+    width: 100%;
+    left: 0; 
+    right: 0; 
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.footer-contact {
+    /* Styles for the contact section */
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact li {
+    /* Styles for each contact item */
+}
+
+.footer-copy {
+    /* Styles for the copyright section */
 }
