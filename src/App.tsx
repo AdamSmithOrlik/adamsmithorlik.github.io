@@ -14,7 +14,7 @@ function App() {
   return (
     <>
     <Header /> 
-    <Sidebar />
+    {/* <Sidebar /> */}
     <div className="main-content">
     <div id="home" className="section"> {/* Home Section */}
         <h1>{Content.home.title}</h1>
