@@ -1,0 +1,22 @@
+.dropbtn-rocket {
+    position: fixed;
+    left: 20px; /* Distance from the left edge of the viewport */
+    top: 60px; /* Distance from the top edge of the viewport */
+    transform: translateY(-50%);
+    height: 80px; /* Adjust the size as needed */
+    width: 80px; /* Adjust the size as needed */
+    cursor: pointer;
+    animation: spin 10s linear infinite;
+    padding: 1em;
+    scale: 1.1; /* Adjusted for consistency */
+    z-index: 10000; /* Ensures it stays above other content */
+}
+
+@keyframes spin {
+    from {
+        transform: translateY(-50%) rotate(0deg);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}

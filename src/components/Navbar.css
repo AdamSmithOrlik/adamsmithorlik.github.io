@@ -1,0 +1,42 @@
+
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Aligns logo to the left and menu items to the right */
+    align-items: center;
+    position: absolute;
+    top: 115px; /* Stick to the top of the viewport */
+   /* Adjust background color as needed */
+    z-index: 10; /* Ensures the navbar stays on top of other content */
+    padding: 0 0px; /* Add some padding on the sides */
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  .navbar-logo {
+    max-height: 50px;
+    width: auto; /* Maintains the aspect ratio */
+  }
+
+  /* Style the list to appear in a row */
+.navbar ul {
+    display: flex; /* Aligns the list items in a row */
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Ensures the list is aligned properly */
+  }
+  
+  .navbar li {
+    padding: 10px 15px; 
+  }
+  
+  .navbar a {
+    color: var(--text-color); /* Adjust the color as needed */
+    text-decoration: none; /* Removes underline from links */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .navbar a:hover {
+    color: #646cff; /* Hover color change, adjust as needed */
+  }
