@@ -2,7 +2,9 @@
 .header {
     /* background: linear-gradient(to right, #E6E6FA, black); */
     background-image: url(../assets/galxies.jpeg);
-    background-position: top;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
     text-align: center;
     padding: 10px; /* Reduced from 10px to 5px */
     position: absolute;
