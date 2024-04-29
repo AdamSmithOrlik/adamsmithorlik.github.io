@@ -6,11 +6,12 @@ import logo from '../assets/web_logo.png';
 
 const Header: React.FC = () => {
     return (
-        <header className="header"> 
-            {/* <DropdownMenu /> */}
-            <h1>Adam Smith Orlik</h1>
-            <p className="subtitle">PhD Student, Theoretical Physics</p>
-            <p className="subtitle">York University, Toronto, Canada</p>
+        <header className="header">
+            <div className="header-content">
+                <h1>Adam Smith Orlik</h1>
+                <p className="subtitle">PhD Student, Theoretical Physics</p>
+                <p className="subtitle">York University, Toronto, Canada</p>
+            </div>
             <img src={logo} alt="Logo" className="header-logo" />
         </header>
     );

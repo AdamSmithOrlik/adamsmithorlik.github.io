@@ -1,22 +1,41 @@
 .dropbtn-rocket {
     position: fixed;
-    left: 20px; /* Distance from the left edge of the viewport */
-    top: 60px; /* Distance from the top edge of the viewport */
-    transform: translateY(-50%);
+    left: 0.5%; /* Distance from the left edge of the viewport */
+    top: calc(100px + 1em); /* Adjust based on your header height + some space */
+    transform: translate(-50%, -50%);
     height: 80px; /* Adjust the size as needed */
     width: 80px; /* Adjust the size as needed */
     cursor: pointer;
     animation: spin 10s linear infinite;
-    padding: 1em;
+    padding: 0em;
     scale: 1.1; /* Adjusted for consistency */
     z-index: 10000; /* Ensures it stays above other content */
 }
 
 @keyframes spin {
     from {
-        transform: translateY(-50%) rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
-        transform: translateY(-50%) rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+/* Adjustments for tablets and mobile devices */
+@media (max-width: 768px) {
+    .dropbtn-rocket {
+        top: calc(70px + 1em); /* Smaller top offset due to likely smaller header */
+        height: 60px; /* Smaller size for smaller screens */
+        width: 60px; /* Smaller size for smaller screens */
+    }
+}
+
+/* More specific adjustments for mobile devices */
+@media (max-width: 480px) {
+    .dropbtn-rocket {
+        left: 10px; /* Closer to the edge to maximize space */
+        top: calc(60px + 1em); /* Even smaller top offset */
+        height: 50px; /* Further reduced size for very small screens */
+        width: 50px; /* Further reduced size for very small screens */
     }
 }

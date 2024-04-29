@@ -1,58 +1,79 @@
 
 .header {
     /* background: linear-gradient(to right, #E6E6FA, black); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
     background-image: url(../assets/galxies.jpeg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    text-align: center;
-    padding: 10px; /* Reduced from 10px to 5px */
-    position: absolute;
-    width: 100%;
-    top: 0px;
-    left: 0;
-    z-index: 1000;
-    margin: 0; 
+    padding: 1%; /* Reduced from 10px to 5px */
+    position: relative;
+    width: 100%;;
+    z-index: 5;
+    height: auto;
     box-sizing: border-box;
 }
-
-
-body {
-    padding-top: 10px; /* Adjust this value if necessary */
-}
-
 .header h1 {
-    -webkit-text-stroke: 2px black; /* Black border around the letters */
-    color: white; /* Ensures the text color is white */
-    display: inline-block;
+    -webkit-text-stroke: calc(0.05rem + 0.05vw) black; /* Reduced stroke for smaller screens */
+    color: white;
+    font-size: calc(1.8rem + 1vw); /* Dynamically adjust size based on screen width */
     margin: 0;
-    padding: 1px; 
-   
+    padding: 1px;
 }
 
 .header .subtitle {
+    -webkit-text-stroke: calc(0.02rem + 0.02vw) black;
     color: white;
-    font-size: 0.8rem; /* Adjust the size as needed */
-    margin: 0; /* To remove default margin */
+    font-size: calc(0.7rem + 0.7vw); /* Adjust font size dynamically */
+    margin: 0;
 }
 
-/* .header {
-    position: relative; 
-} */
+.header-content {
+    flex: 1; /* Takes up the maximum available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the text vertically and horizontally in its container */
+    z-index: 2;
+}
 
 .header-logo {
     position: absolute;
-    top: -25px;  /* Adjust as needed */
-    right: 5px; /* Adjust as needed */
-    height: 150px;
-    width: 150px;/* Adjust the size as needed */
+    right: 10px; /* Keeps the logo to the right */
+    top: 50%; /* Center the logo vertically */
+    transform: translateY(-50%); /* Adjust the position to truly center it based on its height */
+    height: auto;
+    width: 15%;
+    max-width: 150px;
+    min-width: 50px;
+    z-index: 1; /* Lower z-index if you want text potentially over logo */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding-top: 60px; /* Adjust if your header size changes */
+
+/* Adjustments for tablets */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: calc(1rem + 1vw); /* Slightly smaller to fit better */
+    }
 }
+
+/* Adjustments for mobile devices */
+@media (max-width: 480px) {
+    .header {
+        padding: 5px;
+    }
+    .header h1 {
+        font-size: calc(0.8rem + 1vw); /* Even smaller for mobile screens */
+    }
+    .header-logo {
+        width: 12%; /* Slightly smaller logo on mobile */
+        min-width: 45px; /* Not too small to lose visibility */
+    }
+}
+
 
 
 
