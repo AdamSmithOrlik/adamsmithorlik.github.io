@@ -18,17 +18,17 @@
     box-sizing: border-box;
 }
 .header h1 {
-    -webkit-text-stroke: calc(0.05rem + 0.05vw) black; /* Reduced stroke for smaller screens */
+    -webkit-text-stroke: calc(0.08rem + 0.08vw) black; /* Reduced stroke for smaller screens */
     color: white;
-    font-size: calc(1.8rem + 1vw); /* Dynamically adjust size based on screen width */
+    font-size: calc(2rem + 2vw); /* Dynamically adjust size based on screen width */
     margin: 0;
     padding: 1px;
 }
 
 .header .subtitle {
-    -webkit-text-stroke: calc(0.02rem + 0.02vw) black;
+    -webkit-text-stroke: calc(0.03rem + 0.03vw) black;
     color: white;
-    font-size: calc(0.7rem + 0.7vw); /* Adjust font size dynamically */
+    font-size: calc(0.8rem + 0.8vw); /* Adjust font size dynamically */
     margin: 0;
 }
 
@@ -56,7 +56,12 @@
 /* Adjustments for tablets */
 @media (max-width: 768px) {
     .header h1 {
-        font-size: calc(1rem + 1vw); /* Slightly smaller to fit better */
+        font-size: calc(1.3rem + 1.3vw); /* Slightly smaller to fit better */
+        -webkit-text-stroke: calc(0.06rem + 0.06vw) black;
+    }
+    .header .subtitle {
+        font-size: calc(0.6rem + 0.6vw); /* Smaller subtitle for mobile */
+        -webkit-text-stroke: calc(0.01rem + 0.01vw) black;
     }
 }
 
@@ -66,7 +71,12 @@
         padding: 5px;
     }
     .header h1 {
-        font-size: calc(0.8rem + 1vw); /* Even smaller for mobile screens */
+        font-size: calc(1rem + 1vw); /* Even smaller for mobile screens */
+        -webkit-text-stroke: calc(0.04rem + 0.04vw) black;
+    }
+    .header .subtitle {
+        font-size: calc(0.4rem + 0.4vw); /* Smaller subtitle for mobile */
+        -webkit-text-stroke: calc(0.008rem + 0.008vw) black;
     }
     .header-logo {
         width: 12%; /* Slightly smaller logo on mobile */
