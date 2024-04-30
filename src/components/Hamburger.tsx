@@ -1,15 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './Hamburger.css';
 
-const Hamburger: React.FC<{ headerHeight: number }> = ({ headerHeight }) => {
-    const [isOpen, setIsOpen] = useState(false);
+interface HamburgerProps {
+  headerHeight: number;
+}
 
+const Hamburger: React.FC<HamburgerProps> = ({ headerHeight }) => {
+    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const menuRef = useRef<HTMLDivElement | null>(null);  // Typing the ref for a div element
+
+    // Toggle the menu open/closed
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
+    // Handle clicks outside the menu
+    useEffect(() => {
+        function handleClickOutside(event: MouseEvent) {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+                setIsOpen(false); // Close the menu if clicking outside
+            }
+        }
+
+        // Add event listener for mouse down
+        document.addEventListener("mousedown", handleClickOutside);
+
+        // Clean up the event listener
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [menuRef]);  // Include menuRef in the dependency array to ensure proper cleanup
+
     return (
-        <div className="menu-icon" style={{ top: `${headerHeight-headerHeight}px` }} onClick={toggleMenu}> 
+        <div ref={menuRef} className="menu-icon" style={{ top: `${headerHeight-headerHeight}px` }} onClick={toggleMenu}>
             <div className={`bar ${isOpen ? "open" : ""}`}></div>
             <div className={`bar ${isOpen ? "open" : ""}`}></div>
             <div className={`bar ${isOpen ? "open" : ""}`}></div>
@@ -28,5 +51,5 @@ const Hamburger: React.FC<{ headerHeight: number }> = ({ headerHeight }) => {
     );
 };
 
-// /* make the top 0 to resolve declare issue. headerHeight is called already in app.tsx, calling it here would double the effect. */
 export default Hamburger;
+
