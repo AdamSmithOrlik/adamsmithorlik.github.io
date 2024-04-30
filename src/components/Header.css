@@ -14,7 +14,7 @@
     position: relative;
     width: 100%;;
     z-index: 5;
-    height: auto;
+    height: 20vw;
     box-sizing: border-box;
 }
 .header h1 {
@@ -56,7 +56,7 @@
 /* Adjustments for tablets */
 @media (max-width: 768px) {
     .header h1 {
-        font-size: calc(1.3rem + 1.3vw); /* Slightly smaller to fit better */
+        font-size: calc(1.5rem + 1.5vw); /* Slightly smaller to fit better */
         -webkit-text-stroke: calc(0.06rem + 0.06vw) black;
     }
     .header .subtitle {
@@ -69,14 +69,15 @@
 @media (max-width: 480px) {
     .header {
         padding: 5px;
+        height: 30vw;
     }
     .header h1 {
-        font-size: calc(1rem + 1vw); /* Even smaller for mobile screens */
-        -webkit-text-stroke: calc(0.04rem + 0.04vw) black;
+        font-size: calc(1.4rem + 1.4vw); /* Even smaller for mobile screens */
+        -webkit-text-stroke: calc(0.05rem + 0.05vw) black;
     }
     .header .subtitle {
-        font-size: calc(0.4rem + 0.4vw); /* Smaller subtitle for mobile */
-        -webkit-text-stroke: calc(0.008rem + 0.008vw) black;
+        font-size: calc(0.6rem + 0.6vw); /* Smaller subtitle for mobile */
+        -webkit-text-stroke: calc(0.01rem + 0.01vw) black;
     }
     .header-logo {
         width: 12%; /* Slightly smaller logo on mobile */
