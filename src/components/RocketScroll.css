@@ -1,7 +1,7 @@
 .dropbtn-rocket {
     position: fixed;
-    left: 0.5%; /* Distance from the left edge of the viewport */
-    top: calc(120px + 1em); /* Adjust based on your header height + some space */
+    right: 1%; /* Distance from the left edge of the viewport */
+    bottom: calc(0px + 2em); /* Adjust based on your header height + some space */
     transform: translate(-50%, -50%);
     height: 80px; /* Adjust the size as needed */
     width: 80px; /* Adjust the size as needed */
@@ -24,7 +24,7 @@
 /* Adjustments for tablets and mobile devices */
 @media (max-width: 768px) {
     .dropbtn-rocket {
-        top: calc(70px + 1em); /* Smaller top offset due to likely smaller header */
+        bottom: calc(0px + 1em); /* Smaller top offset due to likely smaller header */
         height: 60px; /* Smaller size for smaller screens */
         width: 60px; /* Smaller size for smaller screens */
     }
@@ -33,9 +33,9 @@
 /* More specific adjustments for mobile devices */
 @media (max-width: 480px) {
     .dropbtn-rocket {
-        left: 10px; /* Closer to the edge to maximize space */
-        top: calc(60px + 1em); /* Even smaller top offset */
-        height: 50px; /* Further reduced size for very small screens */
-        width: 50px; /* Further reduced size for very small screens */
+        right: 0.5%; /* Closer to the edge to maximize space */
+        bottom: calc(0px + 1em); /* Even smaller top offset */
+        height: 40px; /* Further reduced size for very small screens */
+        width: 40px; /* Further reduced size for very small screens */
     }
 }

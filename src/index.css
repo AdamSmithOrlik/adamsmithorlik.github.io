@@ -4,11 +4,9 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  /* color: rgba(255, 255, 255, 0.87);
-  background-color: #323232; */
-
-  --background-color: #383838; /* Background color for dark mode */
-  --text-color: rgba(255, 255, 255, 0.87); /* Text color for dark mode */
+  /* dark mode sythwave colours */
+  --background-color: #201547; /* Background color for dark mode */
+  --text-color: #E93CAC; /* Text color for dark mode */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
