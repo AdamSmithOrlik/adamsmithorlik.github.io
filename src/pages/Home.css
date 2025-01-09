@@ -1,0 +1,21 @@
+/* src/pages/Home.css */
+
+.home {
+    padding: 10px;
+    font-family: 'CMU Serif', serif; /* LaTeX-style font */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .home h1 {
+    font-size: 5vw;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .home p {
+    font-size: 1rem;
+    text-align: justify; 
+    /* Add room left and right of text */
+    margin: 0 50px 0px 50px;
+  }

@@ -1,0 +1,5 @@
+npm run dev // starts the dev environment in a local host 
+npm run build // creates an optimized version of the build in the dist folder
+npm install // install packages to npm 
+npm run deploy // deploys site to github pages 
+npm run // to see all scripts in package.json

@@ -1,22 +1,20 @@
-import React from 'react';
+// src/components/Header.tsx
+
+import { MathJax, MathJaxContext } from 'better-react-mathjax';
 import './Header.css';
-import logo from '../assets/web_logo.png'; 
-// import DropdownMenu from './DropdownMenu.tsx';
 
+const Header = () => {
+  const mathName = '\\mathcal{Ad} \\alpha \\mathcal{m} \\; \\delta \\mathcal{m}it\\hbar \\; \\Theta \\vec{r} \\mathcal{l} \\iota \\kappa';
+  const subtitle = 'PhD Candidate in Physics at York University, Toronto, Canada';
 
-const Header: React.FC = () => {
-    return (
-        <header className="header">
-            <div className="header-content">
-                <h1>Adam Smith Orlik</h1>
-                <p className="subtitle">PhD Student, Theoretical Physics</p>
-                <p className="subtitle">York University, Toronto, Canada</p>
-            </div>
-            <img src={logo} alt="Logo" className="header-logo" />
-        </header>
-    );
+  return (
+    <header className="header">
+      <MathJaxContext>
+        <MathJax>{`\\(${mathName}\\)`}</MathJax>
+      </MathJaxContext>
+      <p className="subtitle">{subtitle}</p>
+    </header>
+  );
 };
 
-
 export default Header;
-

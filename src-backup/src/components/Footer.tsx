@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
                 <h3>Contact</h3>
                 <ul>
                     <li>Email: <a href="mailto:asorlik@yorku.ca">asorlik@yorku.ca</a> </li>
-                    {/* <li>Personal Email: <a href="mailto:adam.smith2214@gmail.com">adam.smith2214@gmail.com</a> </li> */}
+                    <li>Personal Email: <a href="mailto:adam.smith2214@gmail.com">adam.smith2214@gmail.com</a> </li>
                     <li>Number: 1+(613)-898-4555</li>
                 </ul>
             </div>
@@ -17,9 +17,9 @@ const Footer: React.FC = () => {
                 <ul>
                     {/* Social media links */}
                     <li>GitHub: <a href="https://github.com/AdamSmithOrlik" target="_blank" rel="noopener noreferrer">github.com/AdamSmithOrlik</a></li>
-                    {/* <li>Twitter: <a href="https://twitter.com/AddySmith4" target="_blank" rel="noopener noreferrer">@AddySmith4</a></li> */}
+                    <li>Twitter: <a href="https://twitter.com/AddySmith4" target="_blank" rel="noopener noreferrer">@AddySmith4</a></li>
                     <li>LinkedIn: <a href="https://www.linkedin.com/in/adam-smith-orlik-4a7b99211/" target="_blank" rel="noopener noreferrer">linkedin.com/in/adam-smith-orlik</a></li>
-                    {/* <li>Instagram: <a href="https://www.instagram.com/addy_2214/" target="_blank" rel="noopener noreferrer">@addy_2214</a></li> */}
+                    <li>Instagram: <a href="https://www.instagram.com/addy_2214/" target="_blank" rel="noopener noreferrer">@addy_2214</a></li>
                 </ul>
             </div>
             <div className="footer-column">
