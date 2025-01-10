@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-bottom: 0px;
     /* height: auto; */
   }
   

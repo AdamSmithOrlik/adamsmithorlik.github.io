@@ -17,7 +17,7 @@
 .header .subtitle {
   font-size: 2vw; /* Slightly smaller than the name, scalable */
   font-weight: 300; /* Lighter font weight for subtitle */
-  margin-top: 0; /* Add some spacing below the name */
+  margin-top: 1vh; /* Add some spacing below the name */
   color: #666; /* Softer color for the subtitle */
 }
 

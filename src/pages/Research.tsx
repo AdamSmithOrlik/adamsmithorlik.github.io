@@ -1,17 +1,18 @@
-// src/pages/Home.tsx
+// src/pages/Research.tsx
 
 import React from 'react';
 import './Home.css';
 import { MathJax } from 'better-react-mathjax';
 // @ts-ignore
-import homeContent from '../content/homeContent';
+import researchContent from '../content/researchContent';
 
 const Home: React.FC = () => {
   return (
     <div className="home">
-      <h1>{homeContent.title}</h1>
+      <h1>{researchContent.title}</h1>
+      <h2>{researchContent.subtitle}</h2>
       <p>
-      <MathJax> {homeContent.content} </MathJax> 
+      <MathJax> {researchContent.content} </MathJax> 
       </p>
     </div>
   );

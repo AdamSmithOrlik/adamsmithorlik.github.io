@@ -1,7 +1,7 @@
 /* src/pages/Home.css */
 
 .home {
-    padding: 10px;
+    padding: 0px;
     font-family: 'CMU Serif', serif; /* LaTeX-style font */
     color: #333;
     line-height: 1.6;
@@ -9,13 +9,20 @@
   
   .home h1 {
     font-size: 5vw;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     text-align: center;
+  }
+
+  .home h2 {
+    font-size: 3vw;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #666;
   }
   
   .home p {
     font-size: 1rem;
     text-align: justify; 
     /* Add room left and right of text */
-    margin: 0 50px 0px 50px;
+    margin: 0px 15vw 0px 15vw;
   }
