@@ -1,0 +1,52 @@
+.blog {
+    font-family: 'CMU Serif', serif;
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  
+  .blog t1 {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+  }
+
+  .blog h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 1vh;
+  }
+  
+  .blog-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .blog p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 0;
+  }
+
+  .blog-content {
+    font-family: 'CMU Serif', serif;
+    color: #111;
+    line-height: 1.6;
+    margin: 0 auto;
+    text-align: justify;
+  }
+
+  .blog-end-dots {
+    display: flex;
+    justify-content: center; /* Center the dots */
+    margin-top: 5vh; /* Add space above the dots */
+    margin-bottom: 5vh;
+    font-size: 2rem; /* Adjust size of the dots */
+    color: #777; /* Light gray color */
+  }
+
+  .blog-end-dots span {
+    margin: 0 2vw; /* Add spacing between dots */
+  }

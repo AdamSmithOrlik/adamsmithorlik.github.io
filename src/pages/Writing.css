@@ -1,0 +1,84 @@
+.writing {
+    padding: 0px;
+    font-family: 'CMU Serif', serif; /* LaTeX-style font */
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .writing h1 {
+    font-size: 5vw;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .writing h2 {
+    font-size: 3vw;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #666;
+  }
+  
+  .writing p {
+    font-size: 1rem;
+    text-align: justify; 
+    /* Add room left and right of text */
+    margin: 0px 2vw 0px 2vw;
+  }
+
+  .card-meta {
+    display: flex; /* Makes items in the container align in a row */
+    justify-content: space-between; /* Space between date and subject */
+    align-items: center; /* Vertically center the items */
+    margin-bottom: 0px; /* Add space below the row */
+  }
+  
+  /* Styling for the date */
+  .card-meta h3 {
+    font-size: 0.8rem;
+    color: #888; /* Example color */
+    margin: 0px 0px 0px 1vw;
+  }
+  
+  /* Styling for the subject */
+  .card-meta h4 {
+    font-size: 0.8rem;
+    color: #888;/* Example color */
+    margin: 0px 1vw; /* Remove default margins */
+  }
+
+  /* Cards container */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    margin: 0px 25vw 0px 25vw;
+  }
+  
+  /* Individual card styles */
+  .card {
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 0px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 10px;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-top: -2vw;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Card hover effects */
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }

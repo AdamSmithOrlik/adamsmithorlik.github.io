@@ -3,3 +3,14 @@ npm run build // creates an optimized version of the build in the dist folder
 npm install // install packages to npm 
 npm run deploy // deploys site to github pages 
 npm run // to see all scripts in package.json
+
+Steps to adding a new page 
+- Add file to page folder e.g. newpage.tsx
+- inhereit style from home.css or make a new css file
+- Import page file and add route to App.tsx
+- Ensure class names match up and link names are correct
+- Add link to sidebar.tsx with correct pahts 
+
+# Imports 
+- MathJax
+- react-markdown

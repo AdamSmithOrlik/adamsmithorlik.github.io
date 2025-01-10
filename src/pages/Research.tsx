@@ -6,7 +6,7 @@ import { MathJax } from 'better-react-mathjax';
 // @ts-ignore
 import researchContent from '../content/researchContent';
 
-const Home: React.FC = () => {
+const Research: React.FC = () => {
   return (
     <div className="home">
       <h1>{researchContent.title}</h1>
@@ -18,4 +18,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Research;
