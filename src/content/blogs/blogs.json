@@ -14,5 +14,13 @@
       "subject": "React",
       "preview": "Another preview example.",
       "content": "hi"
+    },
+    {
+      "id": "gpt-site",
+      "title": "Making a Website with GPT",
+      "date": "Jan 11, 2025",
+      "subject": "Coding",
+      "preview": "In this article I outline how I make a full-feature website with no prrior knowledge of HTML, CSS, or JavaScript simply by using GPT-3...",
+      "content": "Placeholder for a hypothetical blog post."
     }
   ]
