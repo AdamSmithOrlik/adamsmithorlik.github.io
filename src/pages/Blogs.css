@@ -31,11 +31,12 @@
   }
 
   .blog-content {
-    font-family: 'CMU Serif', serif;
+    font-family: 'CMU serif', serif;
     color: #111;
     line-height: 1.6;
     margin: 0 auto;
     text-align: justify;
+    max-width: 80%;
   }
 
   .blog-end-dots {

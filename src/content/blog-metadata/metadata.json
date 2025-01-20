@@ -1,0 +1,16 @@
+[
+  {
+    "id": "blog1",
+    "title": "My First Blog Post",
+    "date": "Jan 1, 2025",
+    "subject": "MD File Example",
+    "preview": "This is an example of a blog written in JSON. You can include rich content like HTML, links, and more!"
+  },
+  {
+    "id": "blog2",
+    "title": "The Mystery of Dark Matter",
+    "date": "Feb 10, 2025",
+    "subject": "Astrophysics",
+    "preview": "Exploring how dark matter interacts with galaxies."
+  }
+]

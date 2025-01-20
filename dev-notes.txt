@@ -14,3 +14,12 @@ Steps to adding a new page
 # Imports 
 - MathJax
 - react-markdown
+
+Added obsidian vault to the public website-posts/published/ folder 
+    - Need to manually add metadata to src/content/blog-metadata/metadata.json file 
+        - The id needs to math the title of the article 
+    TODO: Fix the image rendered from the .md file
+          Test latex 
+Removed the header from the blog posts 
+Fixed the carousel 
+

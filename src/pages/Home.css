@@ -24,17 +24,17 @@
     font-size: 1rem;
     text-align: justify; 
     /* Add room left and right of text */
-    margin: 0px 15vw 0px 15vw;
+    margin: 5vw 15vw 0px 15vw;
   }
 
   /* Swiper container */
 .swiper-container {
-  width: 50%;
+  width: 40%;
   max-width: 800px;
   margin: 2vw auto;
   border-radius: 2vw; /* Rounded corners */
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
 } 
 
 /* Swiper slides */
