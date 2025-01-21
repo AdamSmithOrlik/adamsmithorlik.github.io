@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Writing.css';
 
-import metadata from '../content/blog-metadata/metadata.json';
+import metadata from '../blog-meta-data/metadata.json';
 
 
 const Writing: React.FC = () => {
