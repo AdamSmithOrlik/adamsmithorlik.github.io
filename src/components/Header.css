@@ -7,7 +7,7 @@
   left: 0;
   width: 100%; /* Spans the entire width of the viewport */
   text-align: center;
-  font-size: 4vw; /* Font size scales with the viewport width */
+  font-size: 6vw; /* Font size scales with the viewport width */
   font-weight: bold;
   color: #333;
   padding: 0 0; /* Padding scales with the viewport height */
@@ -23,7 +23,7 @@
 
 /* Add spacing to ensure content is not overlapped */
 body {
-  padding-top: 20px; /* Adjust based on header's height */
+  padding-top: 3vh; /* Adjust based on header's height */
 }
 
 /* Optional: Add scaling for larger screens */

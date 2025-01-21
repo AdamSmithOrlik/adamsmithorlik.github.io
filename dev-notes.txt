@@ -9,11 +9,18 @@ Steps to adding a new page
 - inhereit style from home.css or make a new css file
 - Import page file and add route to App.tsx
 - Ensure class names match up and link names are correct
-- Add link to sidebar.tsx with correct pahts 
+- Add link to sidebar.tsx with correct paths
+
+Steps to add a blog
+- Put note in obsidian vault with the title id
+- Add meta data to src/blog-meta-data/metadata.json, id mush match the name of the note 
+- If metadata id matches the card should automatically appear with the content rendered from obsidian on click
+NB: Need to use html for images and mathajax notation for equations (CHECK IF I CAN CHANGE THIS...)
 
 # Imports 
 - MathJax
 - react-markdown
+- markdown-to-jsx
 
 Added obsidian vault to the public website-posts/published/ folder 
     - Need to manually add metadata to src/content/blog-metadata/metadata.json file 
@@ -22,4 +29,12 @@ Added obsidian vault to the public website-posts/published/ folder
           Test latex 
 Removed the header from the blog posts 
 Fixed the carousel 
+
+- Fixed the image issue with obsidian and website. Now you need to use raw html to load an image. The image does not appear in obsidian but it works on the website.
+- Got Latex rendering working between obsidian notes and website format. 
+- Moved the content for homepage and research page to obsidian as well in the folder public/website-posts/content/
+    - moved meta data for blog previews to src/blog-meta-data/metadata.json for cleaner paths 
+    - Titles are now in the respective tsx files, ex. "Reseach" in Reseach.tsx
+    - Homepage and Reseach content now comes from obsidian files 
+
 

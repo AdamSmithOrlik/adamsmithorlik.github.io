@@ -20,6 +20,6 @@
   /* Main content area */
   .content {
     flex: 1; /* Fills remaining space between header and footer */
-    margin-top: 20px;
+    margin-top: 0;
     height: full;
   }

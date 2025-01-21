@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Markdown from "markdown-to-jsx";
-import metadata from "../content/blog-metadata/metadata.json";
+import metadata from "../blog-meta-data/metadata.json";
+import { MathJax } from 'better-react-mathjax';
 import "./Blogs.css";
 
 // Define the metadata structure
@@ -9,7 +10,7 @@ interface BlogMeta {
   id: string;
   title: string;
   date: string;
-  subject: string;
+  subject: string; 
 }
 
 // Author name (if needed)
@@ -44,12 +45,12 @@ const Blog: React.FC = () => {
         setError("Blog content could not be loaded.");
       });
   }, [id]);
-
+  
   // Handle missing metadata
   if (!blogMeta) {
     return <div className="blog-error">Blog metadata not found.</div>;
   }
-
+ 
   return (
     <div className="blog">
       {/* Dont need a title  */}
@@ -64,7 +65,9 @@ const Blog: React.FC = () => {
         <div className="blog-error">{error}</div>
       ) : (
         <div className="blog-content">
+          <MathJax> 
           <Markdown>{markdown}</Markdown>
+          </MathJax>
         </div>
       )}
 

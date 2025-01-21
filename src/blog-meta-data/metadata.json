@@ -12,5 +12,12 @@
     "date": "Feb 10, 2025",
     "subject": "Astrophysics",
     "preview": "Exploring how dark matter interacts with galaxies."
+  },
+  {
+    "id": "blog3",
+    "title": "The Future of AI",
+    "date": "Mar 15, 2025",
+    "subject": "Artificial Intelligence",
+    "preview": "Discussing the potential of AI in various industries."
   }
 ]

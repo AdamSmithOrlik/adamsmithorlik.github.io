@@ -8,4 +8,8 @@ I have three goals with this setup:
 
 This is a test file. 
 
-Import an image ![[total_calories.png]]
+Import an image
+
+<img src="/website-posts/publish/images/total_calories.png" alt="Total Calories" width="500px" />
+
+

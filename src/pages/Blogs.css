@@ -51,3 +51,11 @@
   .blog-end-dots span {
     margin: 0 2vw; /* Add spacing between dots */
   }
+
+  .blog-content img {
+    max-width: 100%; /* Scale image down to 80% of the container */
+    height: auto;   /* Maintain aspect ratio */
+    display: block; /* Ensures images are centered */
+    margin: 0vw auto; /* Centers images */
+    border-radius: 2vw; /* Optional: adds rounded corners */
+  }

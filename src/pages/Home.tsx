@@ -1,23 +1,35 @@
 // src/pages/Home.tsx
 
-import React from 'react';
+import React, { useState, useEffect } from "react";
 import './Home.css';
 import { MathJax } from 'better-react-mathjax';
-// @ts-ignore
-import homeContent from '../content/homeContent';
+import Markdown from "markdown-to-jsx"; 
 
 // swiper import 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
+import 'swiper/css/navigation'; 
 
 
 const Home: React.FC = () => {
+  const [markdown, setMarkdown] = useState<string>("");
+
+  useEffect(() => {
+    fetch("/website-posts/content/Homepage.md") // Load the Markdown file
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Failed to load homepage content");
+        }
+        return response.text();
+      })
+      .then((text) => setMarkdown(text))
+      .catch((error) => console.error("Error loading homepage:", error));
+  }, []);
+
   return (
     <div className="home">
-      <h1>{homeContent.title}</h1>
         {/* Swiper Carousel */}
       <Swiper
         modules={[Pagination, Navigation]}
@@ -38,9 +50,11 @@ const Home: React.FC = () => {
         </SwiperSlide>
       </Swiper>
 
-      <p>
-      <MathJax> {homeContent.content} </MathJax> 
-      </p>
+      <MathJax>
+        <div className="p">
+          <Markdown>{markdown}</Markdown>
+        </div>
+      </MathJax>
     </div>
   );
 };

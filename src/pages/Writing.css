@@ -34,14 +34,14 @@
   
   /* Styling for the date */
   .card-meta h3 {
-    font-size: 0.8rem;
+    font-size: 1.5vw;
     color: #888; /* Example color */
     margin: 0px 0px 0px 1vw;
   }
   
   /* Styling for the subject */
   .card-meta h4 {
-    font-size: 0.8rem;
+    font-size: 1.5vw;
     color: #888;/* Example color */
     margin: 0px 1vw; /* Remove default margins */
   }
@@ -67,13 +67,13 @@
   }
   
   .card h2 {
-    font-size: 1.5rem;
+    font-size: 2.5vw;
     margin-top: -1vw;
     color: #333;
   }
   
   .card p {
-    font-size: 1rem;
+    font-size: 2vw;
     color: #555;
   }
   
