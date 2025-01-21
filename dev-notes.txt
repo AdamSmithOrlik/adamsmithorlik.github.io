@@ -38,3 +38,4 @@ Fixed the carousel
     - Homepage and Reseach content now comes from obsidian files 
 
 
+
