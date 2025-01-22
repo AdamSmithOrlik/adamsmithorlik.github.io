@@ -3,7 +3,7 @@
 .home {
     padding: 0px;
     font-family: 'CMU Serif', serif; /* LaTeX-style font */
-    color: #333;
+    /* color: #333; */
     line-height: 1.6;
   }
   
@@ -17,14 +17,19 @@
     font-size: 2rem;
     margin: 0vw 15vw 0px 15vw;
     /* text-align: center; */
-    color: #666;
+    color: var(--secondary-color);
   }
   
   .home p {
     font-size: 1rem;
     text-align: center-justify; 
+    text-indent: 2rem;
     /* Add room left and right of text */
-    margin: 0vw 15vw 0px 15vw;
+    margin: 0vw 15vw 1rem 15vw;
+  }
+
+  .home p a {
+    color: #d38eee;
   }
 
   /* Swiper container */

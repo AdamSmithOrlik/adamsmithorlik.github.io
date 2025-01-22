@@ -3,37 +3,44 @@
     max-width: 80%;
     margin: 0 auto;
   }
-  
-  .blog t1 {
-    font-size: 2.5rem;
-    margin-bottom: 0px;
+
+  .blog h1 {
+    font-size: 3vw;
+    color: var(--text-color);
+    margin: 0 4vw 1vh 4vw;
   }
 
   .blog h2 {
-    font-size: 1.5rem;
-    color: #555;
-    margin-bottom: 1vh;
+    font-size: 4vw;
+    color: var(--text-color);
+    margin-bottom: 1rem;
   }
   
   .blog-meta {
     display: flex;
     justify-content: space-between;
-    font-size: 0.9rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 2vw;
+    color: var(--secondary-color);
+    margin: 0vw 4vw 1vw 4vw;
   }
   
   .blog p {
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 1.2;
     text-align: justify;
-    margin: 0;
+    text-indent: 1rem;
+    margin: 0 0 1rem 0;
+  }
+
+  .blog p a {
+    color: #d38eee;
   }
 
   .blog-content {
     font-family: 'CMU serif', serif;
-    color: #111;
-    line-height: 1.6;
+    /* color: #111; */
+    font-size: 1.2rem;
+    line-height: 1.2;
     margin: 0 auto;
     text-align: justify;
     max-width: 80%;
@@ -57,5 +64,13 @@
     height: auto;   /* Maintain aspect ratio */
     display: block; /* Ensures images are centered */
     margin: 0vw auto; /* Centers images */
-    border-radius: 2vw; /* Optional: adds rounded corners */
+    /* border-radius: 2vw; Optional:  */
   }
+
+  .blog-divider {
+    margin: 0 0vw 4vw 0vw;
+    border: 0;
+    height: 0.1vw;
+    background: var(--secondary-color);
+    border-radius: 2vw;
+}

@@ -1,0 +1,55 @@
+/* Default Light Mode */
+:root {
+    --background-color: #ffffff;
+    --text-color: #333;
+    --secondary-color: #555;
+    --card-color: ;
+}
+
+/* Dark Mode (Automatically Applies When User Has Dark Mode Enabled) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #222;
+        --text-color: #ffffff;
+        --secondary-color: #c7c7c7;
+        --card-color: #444;
+    }
+}
+
+/* Apply Colors to the Whole Website */
+body, .app {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'CMU Serif', serif; /* LaTeX-style font */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ensure Content Areas and Links Adapt */
+h1 {
+    color: var(--text-color);
+}
+
+h2, h3 {
+    color: var(--secondary-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+.research, .home, .writing {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Ensure Links Are Visible in Dark Mode */
+a {
+    color: var(--secondary-color);
+}
+
+/* Sidebar and Footer Adjustments */
+.sidebar, .footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+

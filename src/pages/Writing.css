@@ -1,7 +1,7 @@
 .writing {
     padding: 0px;
     font-family: 'CMU Serif', serif; /* LaTeX-style font */
-    color: #333;
+    /* color: #333; */
     line-height: 1.6;
   }
   
@@ -15,14 +15,19 @@
     font-size: 3vw;
     margin-bottom: 0px;
     text-align: center;
-    color: #666;
+    /* color: #666; */
   }
   
   .writing p {
     font-size: 1rem;
     text-align: justify; 
     /* Add room left and right of text */
-    margin: 0px 2vw 0px 2vw;
+    margin: 0px 2vw 1rem 2vw;
+    text-indent: 1rem;
+  }
+
+  .writing p a {
+    color: #d38eee;
   }
 
   .card-meta {
@@ -35,14 +40,14 @@
   /* Styling for the date */
   .card-meta h3 {
     font-size: 1.5vw;
-    color: #888; /* Example color */
+    color: var(--secondary-color); /* Example color */
     margin: 0px 0px 0px 1vw;
   }
   
   /* Styling for the subject */
   .card-meta h4 {
     font-size: 1.5vw;
-    color: #888;/* Example color */
+    color: var(--secondary-color); /* Example color */
     margin: 0px 1vw; /* Remove default margins */
   }
 
@@ -56,12 +61,11 @@
   
   /* Individual card styles */
   .card {
-    background: #f9f9f9;
-    border: 2px solid #ddd;
+    background: var(--card-color);
+    border: 2px solid var(--secondary-color);
     border-radius: 8px;
     padding: 0px;
     text-decoration: none;
-    color: #333;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     margin-bottom: 10px;
   }
@@ -69,16 +73,17 @@
   .card h2 {
     font-size: 2.5vw;
     margin-top: -1vw;
-    color: #333;
+    color: var(--text-color);
   }
   
   .card p {
     font-size: 2vw;
-    color: #555;
+    color: var(--secondary-color);
   }
+
   
   /* Card hover effects */
   .card:hover {
-    transform: scale(1.02);
+    transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }

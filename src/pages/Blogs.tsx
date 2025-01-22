@@ -52,14 +52,14 @@ const Blog: React.FC = () => {
   }
  
   return (
-    <div className="blog">
-      {/* Dont need a title  */}
-      {/* <h1>{blogMeta.title}</h1>  */}
-      <h2>{author}</h2>
+    <div className="blog">    
+      <h1>{author}</h1>
       <div className="blog-meta">
         <span>{blogMeta.date}</span>
         <span>{blogMeta.subject}</span>
       </div>
+
+      <hr className="blog-divider" />
 
       {error ? (
         <div className="blog-error">{error}</div>

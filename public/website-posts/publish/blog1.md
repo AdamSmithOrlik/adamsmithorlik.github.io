@@ -1,4 +1,4 @@
-# Testing the md to blog pipeline
+## Testing the md to blog pipeline
 If I get this working this will be a way to write blog posts in obsidian and have them automatically published to my website. 
 
 I have three goals with this setup:
@@ -12,4 +12,7 @@ Import an image
 
 <img src="/website-posts/publish/images/total_calories.png" alt="Total Calories" width="500px" />
 
+This is another example of a line. 
+
+And hopefully this is another paragraph. 
 

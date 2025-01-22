@@ -1,7 +1,6 @@
 .research {
     padding: 0px;
-    font-family: 'CMU Serif', serif; /* LaTeX-style font */
-    color: #333;
+    font-family: 'CMU Serif', serif; 
     line-height: 1.6;
   }
   
@@ -14,13 +13,13 @@
   .research h2 {
     font-size: 2rem;
     margin: 0vw 15vw 0px 15vw;
-    /* text-align: center; */
-    color: #666;
+    color: var(--secondary-color);
   } 
   
   .research p {
     font-size: 1rem;
-    text-align: center-justify;
+    text-align: center-justify; 
+    text-indent: 2rem;
     /* Add room left and right of text */
-    margin: 0vw 15vw 0px 15vw;
+    margin: 0vw 15vw 1rem 15vw;
   }

@@ -14,6 +14,7 @@ import Blog from './pages/Blogs';
 // Imports
 import { MathJaxContext } from 'better-react-mathjax';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import './App.css';
 
 
 const mathJaxConfig = {
@@ -22,7 +23,7 @@ const mathJaxConfig = {
     displayMath: [["$$", "$$"], ["\\[", "\\]"]], // Enables both $$...$$ and \[ ... \] for block math
     tags: "none", // Disable automatic equation numbering for now
   },
-};
+}; 
 
 // Layout component to conditionally hide the Header on blog pages
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
