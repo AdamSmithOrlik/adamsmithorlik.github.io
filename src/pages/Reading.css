@@ -1,0 +1,98 @@
+.reading-page {
+  padding: 0px;
+  font-family: 'CMU Serif', serif; /* LaTeX-style font */
+  line-height: 1.6;
+}
+
+/* Page Title */
+.reading-page h1 {
+  font-size: 5vw;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+/* Book List Container */
+.book-list {
+  margin: 0vw 15vw;
+  padding-bottom: 20px;
+}
+
+/* Book Entry */
+.book-entry {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 0.1rem solid var(--secondary-color);
+}
+
+/* Book Cover */
+.book-cover {
+  width: 100px; /* Ensures consistent image size */
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+/* Book Info */
+.book-info {
+  flex: 1;
+}
+
+/* Book Title */
+.book-info h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+/* Book Meta Data (Date & Author) */
+.book-meta {
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+/* Star Rating */
+.book-stars {
+  font-size: 1rem;
+  color: gold;
+}
+
+/* Book Review */
+.book-review {
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* Links in Book Titles */
+.book-info h3 a {
+  color: #d38eee;
+  text-decoration: none;
+}
+
+.book-info h3 a:hover {
+  text-decoration: underline;
+}
+
+/* 🔹 Make the book cover go ABOVE the text on small screens */
+@media screen and (max-width: 768px) {
+  .book-entry {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center the image and text */
+    text-align: center;
+  }
+
+  .book-cover {
+    width: 150px; /* Slightly larger image for better visibility */
+    margin: 0 0 10px 0; /* Remove side margin, add bottom margin */
+  }
+
+  .book-info {
+    text-align: center;
+  }
+
+  .book-meta {
+    font-size: 1rem;
+  }
+}
+
+

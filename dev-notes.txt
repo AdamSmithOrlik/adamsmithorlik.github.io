@@ -37,5 +37,8 @@ Fixed the carousel
     - Titles are now in the respective tsx files, ex. "Reseach" in Reseach.tsx
     - Homepage and Reseach content now comes from obsidian files 
 
+TODO:
+- Add reading page (format books read and current reading list as well as recommendations)
+- Add fitness page (timeline with pictures, potentially a space for clients)
 
 

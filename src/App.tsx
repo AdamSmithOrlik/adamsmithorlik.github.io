@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Writing from './pages/Writing';
 import Research from './pages/Research';
+import Reading from './pages/Reading';
 // Blogs
 import Blog from './pages/Blogs';
 // Imports
@@ -52,6 +53,7 @@ const App: React.FC = () => {
             <Route path="/research" element={<Research />} />
             <Route path="/writing" element={<Writing />} />
             <Route path="/writing/:id" element={<Blog />} />
+            <Route path="/reading" element={<Reading />} />
           </Routes>
         </Layout>
       </MathJaxContext>

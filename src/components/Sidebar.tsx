@@ -58,6 +58,17 @@ const Sidebar: React.FC = () => {
                 Writing
               </NavLink>
             </li>
+
+            {/* Reading link */}
+            <li>
+              <NavLink
+                to="/reading"
+                onClick={closeSidebar}
+                className={({ isActive }) => (isActive ? 'active-link' : 'inactive-link')}
+              >
+                Reading
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
