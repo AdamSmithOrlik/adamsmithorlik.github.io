@@ -15,18 +15,27 @@ interface Book {
 }
 
 const Reading: React.FC = () => {
-  const [books, setBooks] = useState<Book[]>([]);
+  const [books, setReadBooks] = useState<Book[]>([]);
+  const [favbooks, setFavoriteBooks] = useState<Book[]>([]);
 
   useEffect(() => {
+    // Fetch Read Books
     fetch("/books/read-data.json")
       .then((response) => {
-        if (!response.ok) {
-          throw new Error("Failed to load books metadata");
-        }
+        if (!response.ok) throw new Error("Failed to load books metadata");
         return response.json();
       })
-      .then((data) => setBooks(data))
+      .then((data) => setReadBooks(data))
       .catch((error) => console.error("Error loading book data:", error));
+
+    // Fetch Favorite Books
+    fetch("/books/favourites-data.json")
+      .then((response) => {
+        if (!response.ok) throw new Error("Failed to load favorite books");
+        return response.json();
+      })
+      .then((data) => setFavoriteBooks(data))
+      .catch((error) => console.error("Error loading favorite books:", error));
   }, []);
 
   return (
@@ -35,7 +44,7 @@ const Reading: React.FC = () => {
 
       <nav className="reading-nav">
         <a href="#books-read">Books Read</a>
-        <a href="#favorites">Favorites</a>
+        <a href="#favorites">Favourites</a>
         <a href="#to-read">To Read</a>
         <a href="#quotes">Quotes</a>
         <a href="#authors">Authors</a>
@@ -67,8 +76,24 @@ const Reading: React.FC = () => {
       </div>
 
       <div id="favorites" className="reading-section">
-        <h2>Favorites</h2>
-        <p>Coming soon...</p>
+        <h2>Favourites</h2>
+        <div className="book-list">
+          {favbooks.map((favbooks) => (
+            <div key={favbooks.id} className="book-entry">
+              <img src={favbooks.cover} alt={favbooks.title} className="book-cover" />
+              <div className="book-info">
+                <h3>
+                  <Markdown options={{ forceBlock: false }}>{favbooks.title}</Markdown>
+                </h3>
+                <p className="book-review">
+                {Array.isArray(favbooks.review)
+                  ? favbooks.review.map((para, index) => <p key={index}>{para}</p>) // Handle array of paragraphs
+                  : favbooks.review.split("\n").map((para, index) => <p key={index}>{para}</p>)} 
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div id="to-read" className="reading-section">

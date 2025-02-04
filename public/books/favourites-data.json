@@ -1,0 +1,44 @@
+[
+    {
+        "id": "book1",
+        "title": "[The Idiot by Dostoyevsky](https://en.wikipedia.org/wiki/The_Idiot)",
+        "date": "Jul 2021",
+        "subject": "Fiction",
+        "rating": "5",
+        "difficulty": "4",
+        "review": "The Idiot follows Prince Myshkin, the heir to a large fortune returning to Russian society after being treated since childhood in a Swiss sanatorium for his fits of epilepsy. The novel contrasts in the character of Myshkin the unadulterated goodness of a childlike innocence with the depravity and greed of Russian society. Myshkin is often confused for a symbol of naivety, but, far from it, Myshkin is the embodiment of the idea of Christ as a 'man-god.' Myshkin, nouveau riche, is cast headlong into the affairs of Russian high society, where he elicits great intrigue as a queer outsider and an easy dupe. Myshkins moral compass draws him to the suffering of each character, and finds himself overwhelmed in light of their competing burdens. \n\n \n\nI would not recommend this book for the uninitiated to Dostoyevsky. Its themes and motifs draw heavily on Dostoyevsky's larger body of work: suicide, revelation through epilepsy, human suffering, the 'shadow' of psychology, nihilism and atheism (embodied by my favourite character Ippolit, a bright young invalid with a terminal illness), and salvation through beauty and true love. However, this book had the single greatest impact on my life and still to this day I find myself pondering the story of Marie and the choice of Myshkin. In this novel Dostoyevsky's ability to evoke the diaphanous concept of meaning is at its most consummate.",
+        "cover": "images/books/ti.jpeg"
+    },
+    {
+        "id": "book2",
+        "title": "[Emile by Jean-Jacques Rousseau](https://en.wikipedia.org/wiki/Emile,_or_On_Education)",
+        "date": "Mar 2022",
+        "subject": "Philosophy",
+        "rating": "5",
+        "difficulty": "4",
+        "review": " ",
+        "cover": "images/books/ejjr.jpeg"
+      },
+      {
+        "id": "book3",
+        "title": "[A Hero of Our Time by Mikhail Lermontov](https://en.wikipedia.org/wiki/A_Hero_of_Our_Time)",
+        "date": "Mar 2022",
+        "subject": "Fiction",
+        "rating": "5",
+        "difficulty": "4",
+        "review": " ",
+        "cover": "images/books/ahoot.jpeg"
+      }, 
+      {
+        "id": "book4",
+        "title": "[The Improvement of the Mind by Isaac Watts](https://www.amazon.ca/Improvement-Mind-Classic-Reprint/dp/B008H99QGA)",
+        "date": "Mar 2022",
+        "subject": "Fiction",
+        "rating": "5",
+        "difficulty": "4",
+        "review": " ",
+        "cover": "images/books/tiotm.jpeg"
+      }
+
+
+]
