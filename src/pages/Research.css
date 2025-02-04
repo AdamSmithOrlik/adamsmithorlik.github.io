@@ -5,7 +5,7 @@
   }
   
   .research h1 {
-    font-size: 5vw; 
+    font-size: 3rem; 
     margin-bottom: 0px;
     text-align: center;
   }
@@ -18,7 +18,7 @@
   
   .research p {
     font-size: 1rem;
-    text-align: center-justify; 
+    text-align: justify; 
     text-indent: 2rem;
     /* Add room left and right of text */
     margin: 0vw 15vw 1rem 15vw;

@@ -17,12 +17,12 @@
     font-size: 2rem;
     margin: 0vw 15vw 0px 15vw;
     /* text-align: center; */
-    color: var(--secondary-color);
+    color: var(--primary-color);
   }
   
   .home p {
     font-size: 1rem;
-    text-align: center-justify; 
+    text-align: justify; 
     text-indent: 2rem;
     /* Add room left and right of text */
     margin: 0vw 15vw 1rem 15vw;
