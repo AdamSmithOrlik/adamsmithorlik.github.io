@@ -2,12 +2,24 @@
 
 import React, { useState, useEffect } from "react";
 import './Research.css';
-import { MathJax } from 'better-react-mathjax';
-import Markdown from "markdown-to-jsx"; 
-// @ts-ignore
+import { MathJax, MathJaxContext } from 'better-react-mathjax';
+import Markdown from "markdown-to-jsx";
+
+const markdownOptions = {
+  forceBlock: true,
+  overrides: {
+    p: {
+      component: 'div' as const,
+      props: {
+        className: 'p'
+      }
+    }
+  }
+};
 
 const Research: React.FC = () => {
   const [markdown, setMarkdown] = useState<string>("");
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch("/website-posts/content/Research.md") // Load the Markdown file
@@ -17,18 +29,26 @@ const Research: React.FC = () => {
         }
         return response.text();
       })
-      .then((text) => setMarkdown(text))
-      .catch((error) => console.error("Error loading homepage:", error));
+      .then((text) => {
+        setMarkdown(text);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error loading homepage:", error);
+        setIsLoading(false);
+      });
   }, []);
 
   return (
     <div className="research">
       <h1>Research</h1>
-      <MathJax>
-        <div className="p">
-          <Markdown>{markdown}</Markdown>
-        </div>
-      </MathJax>
+      {!isLoading && (
+        <MathJaxContext>
+          <MathJax>
+            <Markdown options={markdownOptions}>{markdown}</Markdown>
+          </MathJax>
+        </MathJaxContext>
+      )}
     </div>
   );
 };
