@@ -19,12 +19,17 @@ import './App.css';
 
 
 const mathJaxConfig = {
+  loader: { load: ["[tex]/html"] },
   tex: {
     inlineMath: [["$", "$"], ["\\(", "\\)"]], // Enables both $...$ and \( ... \) for inline math
     displayMath: [["$$", "$$"], ["\\[", "\\]"]], // Enables both $$...$$ and \[ ... \] for block math
     tags: "none", // Disable automatic equation numbering for now
+    packages: { "[+]": ["html"] }
   },
-}; 
+  startup: {
+    typeset: true
+  }
+};
 
 // Layout component to conditionally hide the Header on blog pages
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
