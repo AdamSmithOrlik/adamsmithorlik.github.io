@@ -1,25 +1,31 @@
 .research {
-    padding: 0px;
-    font-family: 'CMU Serif', serif; 
-    line-height: 1.6;
-  }
-  
-  .research h1 {
-    font-size: 3rem; 
-    margin-bottom: 0px;
-    text-align: center;
-  }
+  padding: 0px;
+  font-family: 'CMU Serif', serif;
+  line-height: 1.6;
+}
 
-  .research h2 {
-    font-size: 2rem;
-    margin: 0vw 15vw 0px 15vw;
-    color: var(--secondary-color);
-  } 
-  
-  .research p {
-    font-size: 1rem;
-    text-align: justify; 
-    text-indent: 2rem;
-    /* Add room left and right of text */
-    margin: 0vw 15vw 1rem 15vw;
-  }
+.research h1 {
+  font-size: 3rem;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+.research h2 {
+  font-size: 2rem;
+  margin: 0vw 15vw 0px 15vw;
+  color: var(--secondary-color);
+}
+
+.research p,
+.research .p {
+  font-size: 1.2rem;
+  text-align: justify;
+  text-indent: 2rem;
+  /* Add room left and right of text */
+  margin: 0vw 15vw 1rem 15vw;
+}
+
+.research .content {
+  width: 100%;
+  max-width: 100%;
+}

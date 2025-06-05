@@ -13,6 +13,11 @@ const markdownOptions = {
       props: {
         className: 'p'
       }
+    },
+    div: {
+      props: {
+        className: 'p'
+      }
     }
   }
 };
@@ -45,7 +50,9 @@ const Research: React.FC = () => {
       {!isLoading && (
         <MathJaxContext>
           <MathJax>
-            <Markdown options={markdownOptions}>{markdown}</Markdown>
+            <div className="content">
+              <Markdown options={markdownOptions}>{markdown}</Markdown>
+            </div>
           </MathJax>
         </MathJaxContext>
       )}

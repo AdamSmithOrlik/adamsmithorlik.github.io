@@ -1,10 +1,10 @@
 [
   {
     "id": "blog1",
-    "title": "My First Blog Post",
-    "date": "Jan 1, 2025",
-    "subject": "MD File Example",
-    "preview": "This is an example of a blog written in JSON. You can include rich content like HTML, links, and more!"
+    "title": "The Probability of a Total Solar Eclipse",
+    "date": "April 12, 2024",
+    "subject": "Astrophysics",
+    "preview": "The Moon is just the right size and distance to cause a total solar eclipse. In this blog I explore the probability of this seeming coincidence."
   },
   {
     "id": "blog2",

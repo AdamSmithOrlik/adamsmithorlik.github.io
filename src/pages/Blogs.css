@@ -1,76 +1,101 @@
 .blog {
-    font-family: 'CMU Serif', serif;
-    max-width: 80%;
-    margin: 0 auto;
-  }
+  font-family: 'CMU Serif', serif;
+  max-width: 80%;
+  margin: 0 auto;
+}
 
-  .blog h1 {
-    font-size: 3vw;
-    color: var(--text-color);
-    margin: 0 4vw 1vh 4vw;
-  }
+.blog h1 {
+  font-size: 2rem;
+  color: var(--text-color);
+  margin: 0 4vw 1vh 4vw;
+}
 
-  .blog h2 {
-    font-size: 4vw;
-    color: var(--text-color);
-    margin-bottom: 1rem;
-  }
-  
-  .blog-meta {
-    display: flex;
-    justify-content: space-between;
-    font-size: 2vw;
-    color: var(--secondary-color);
-    margin: 0vw 4vw 1vw 4vw;
-  }
-  
-  .blog p {
-    font-size: 1.2rem;
-    line-height: 1.2;
-    text-align: justify;
-    text-indent: 1rem;
-    margin: 0 0 1rem 0;
-  }
+.blog h2 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 1rem 0rem 1rem 0rem;
+}
 
-  .blog p a {
-    color: #d38eee;
-  }
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2vw;
+  color: var(--secondary-color);
+  margin: 0vw 2vw 1vw 2vw;
+}
 
-  .blog-content {
-    font-family: 'CMU serif', serif;
-    /* color: #111; */
-    font-size: 1.2rem;
-    line-height: 1.2;
-    margin: 0 auto;
-    text-align: justify;
-    max-width: 80%;
-  }
+.blog p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+  text-indent: 1rem;
+  margin: 1rem 0rem 1rem 0;
+}
 
-  .blog-end-dots {
-    display: flex;
-    justify-content: center; /* Center the dots */
-    margin-top: 5vh; /* Add space above the dots */
-    margin-bottom: 5vh;
-    font-size: 2rem; /* Adjust size of the dots */
-    color: #777; /* Light gray color */
-  }
+.blog p a {
+  color: #d38eee;
+}
 
-  .blog-end-dots span {
-    margin: 0 2vw; /* Add spacing between dots */
-  }
+.blog-content {
+  font-family: 'CMU serif', serif;
+  /* color: #111; */
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  margin: 0 auto;
+  text-align: justify;
+  max-width: 80%;
+}
 
-  .blog-content img {
-    max-width: 100%; /* Scale image down to 80% of the container */
-    height: auto;   /* Maintain aspect ratio */
-    display: block; /* Ensures images are centered */
-    margin: 0vw auto; /* Centers images */
-    /* border-radius: 2vw; Optional:  */
-  }
+/* .blog-content p {
+  margin: 2.5rem 0rem 0.5rem 0;
+} */
 
-  .blog-divider {
-    margin: 0 0vw 4vw 0vw;
-    border: 0;
-    height: 0.1vw;
-    background: var(--secondary-color);
-    border-radius: 2vw;
+.blog-end-dots {
+  display: flex;
+  justify-content: center;
+  /* Center the dots */
+  margin-top: 5vh;
+  /* Add space above the dots */
+  margin-bottom: 5vh;
+  font-size: 2rem;
+  /* Adjust size of the dots */
+  color: #777;
+  /* Light gray color */
+}
+
+.blog-end-dots span {
+  margin: 0 2vw;
+  /* Add spacing between dots */
+}
+
+.blog-content img {
+  max-width: 100%;
+  /* Scale image down to 80% of the container */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  /* Ensures images are centered */
+  margin: 2rem auto;
+  /* Added vertical margin of 2rem */
+  /* border-radius: 2vw; Optional:  */
+  border-radius: 0.5rem;
+  /* Optional: adds slight rounding to corners */
+}
+
+/* Add spacing for paragraphs that follow images */
+.blog-content img+p {
+  margin-top: 1.5rem;
+}
+
+/* Add spacing for paragraphs that precede images */
+.blog-content p+img {
+  margin-top: 1.5rem;
+}
+
+.blog-divider {
+  margin: 0 0vw 4vw 0vw;
+  border: 0;
+  height: 0.1vw;
+  background: var(--secondary-color);
+  border-radius: 2vw;
 }
