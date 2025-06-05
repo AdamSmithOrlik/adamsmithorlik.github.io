@@ -40,4 +40,26 @@
       "review": "A short novel that follows two itinerant workers, George and Lennie, as they seek work on a ranch in Claifornia during the Great Depression. Lennie is a large yet simple-minded man and George is his loyal protector, tasked with keeping Lennie out of trouble. Set in the early 20th century, the novel explores themes of friendship, racism, and the American Dream. Steinbeck is able to craft an imperishably meaningful novel by the use of simple characters and simple country dialect. Yet the depth and complexity of the characters is everywhere apparent and profound. I highly recommend this time-honored classic to anyone looking for a short read that pulls at the heartstrings.",
       "cover": "images/books/omam.jpeg"
     }
+    ,
+    {
+      "id": "book5",
+      "title": "[On Palestine by Ilan Pepe & Noam Chomsky](https://www.amazon.ca/Palestine-Noam-Chomsky/dp/1608464709)",
+      "date": "Feb 2025",
+      "subject": "Politics, Activism",
+      "rating": "3",
+      "difficulty": "3",
+      "review": "This book is a conversation by two prominent pro-Palestinian academics Ilan Pepe and Noam Chomsky mediated by Frank Barat. This book takes for granted a very well-versed reader in the history of the Israel-Palestine conflict and therefore does not attempt to relitigate events or educate on the history. The stated aim of this book is to recast the discussion in a new terminology counter to the 'old orthodoxy' that focuses on, what the authors consider foregone concepts, the 'peace process,' the 'two-state solution' and instead equip the activist with the lexion of 'white settler colonialism' and 'apartheid,' with the analogous solutions. This book is a manifesto for activism and not an overview or scholarly investigation of the ongoing conflict in Palestine. I would only recommend this book to someone who has a strong grasp of the history of the conflict and is looking for a new perspective on the issue.",
+      "cover": "images/books/op.jpeg"
+    }
+    ,
+    {
+      "id": "book6",
+      "title": "[Anti-semite and Jew](https://en.wikipedia.org/wiki/Anti-Semite_and_Jew)",
+      "date": "Feb 2025",
+      "subject": "Fiction",
+      "rating": "4",
+      "difficulty": "4",
+      "review": "Anti-semite and Jew is a dramatic telling of the psychology of the Anti-semtie and the Jew he creates by the (non-Jewish) existentialist philosopher Jean-Paul Sartre. This books draws heavily on existentialist concepts such as 'bad faith,' 'inauthenticity,' 'the Other' and loosly relies on Marxist terminology that may lead some readers to confusion. The main actors of the drama are the Anti-semite, the inauthetic Jew, and the authentic Jew. Although the stage is set in France during the post-war period, the themes are universal and still relevant today. I would recommend this book to anyone interested in the psychology of the Anti-semite and how it dictates the psychology of the Jew in a vicious cycle that perpetuates hatred and self-hatred. The proposed solution--concrete liberalism--is surprisingly modern and relevant to the current political climate.",
+      "cover": "images/books/aatj.jpeg"
+    }
   ]
