@@ -8,10 +8,10 @@
   },
   {
     "id": "blog2",
-    "title": "The Mystery of Dark Matter",
-    "date": "Feb 10, 2025",
-    "subject": "Astrophysics",
-    "preview": "Exploring how dark matter interacts with galaxies."
+    "title": "A Better Voting Compass with AI",
+    "date": "April 14, 2025",
+    "subject": "Programming/Politics",
+    "preview": "In the lead up to the 2025 election I set out to qunatify my political beleifs. Using AI and some linear algebra I created a better voting compass."
   },
   {
     "id": "blog3",
