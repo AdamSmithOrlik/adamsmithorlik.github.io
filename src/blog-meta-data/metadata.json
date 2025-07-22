@@ -11,13 +11,6 @@
     "title": "A Better Voting Compass with AI",
     "date": "April 14, 2025",
     "subject": "Programming/Politics",
-    "preview": "In the lead up to the 2025 election I set out to qunatify my political beleifs. Using AI and some linear algebra I created a better voting compass."
-  },
-  {
-    "id": "blog3",
-    "title": "The Future of AI",
-    "date": "Mar 15, 2025",
-    "subject": "Artificial Intelligence",
-    "preview": "Discussing the potential of AI in various industries."
+    "preview": "In the lead up to the 2025 election I set out to quantify my political beliefs. Using AI and some linear algebra I created a better voting compass."
   }
 ]

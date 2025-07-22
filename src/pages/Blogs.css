@@ -99,3 +99,7 @@
   background: var(--secondary-color);
   border-radius: 2vw;
 }
+
+.p {
+  margin-bottom: 1em;
+}
