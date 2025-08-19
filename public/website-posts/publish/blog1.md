@@ -13,7 +13,7 @@ Therefore, the Earth seems to be in quite the privileged position to have such a
 
 Now, before you start making claims about fine-tuning, intelligent design, and providence, let’s put on thinking caps and see if we can come up with a rough estimate for the probability of an Earth-like planet having a moon that is just the right size for a total Solar eclipse.
 
-<img src="/public/images/eclipse-img.jpg" alt="eclipse" width="500px" /> 
+<img src="/images/eclipse-img.jpg" alt="eclipse" width="500px" /> 
 
 *Fig 1: Total Solar eclipse taken at McMaster University on April 8th, 2024 by Adam Smith-Orlik.*
 
@@ -58,7 +58,7 @@ determines the size, in degrees, that the celestial object takes up in the sky. 
 
 For all possible moons — all combinations of distance and mass — I calculated the apparent size as seen from Earth. In Fig. 2 the log of the apparent sizes are plotted on a contour map of all possible distances and radii (substitute for mass given constant density) for the possible moons. In this colour scheme yellow corresponds to large apparent sizes (1.5 →~31°) and blue corresponds to small apparent sizes (-2.5 →3.2x10^-3°). The black dashed line represents the apparent size of the Sun, -0.27 in log units, and the gray band represents the tolerance mentioned above.
 
-<img src="/public/images/apparent.png" alt="apparent" width="500px" /> 
+<img src="/images/apparent.png" alt="apparent" width="500px" /> 
 
 *Fig 2: Contour plot for the apparent size of all possible moons mapped onto a grid of orbital distance and radius of moon. The contour colours correspond to the log of the apparent sizes.*
 
@@ -78,6 +78,6 @@ So there we go, the next time someone busts out this fact to impress you with su
 
 Finally, I’ll leave you with an animation of what the possible moons I considered in this analysis would look like as seen from Earth.
 
-<img src="/public/images/visualize-eclipse.gif" alt="gif" width="500px" /> 
+<img src="/images/visualize-eclipse.gif" alt="gif" width="500px" /> 
 
 Feel free to fork the public GitHub I used to make these plots and figures: [https://github.com/AdamSmithOrlik/eclipse_probability](https://github.com/AdamSmithOrlik/eclipse_probability), or check out the main post on [Medium](https://medium.com/@asorlik/the-probability-of-total-solar-eclipses-f829363906c8).
