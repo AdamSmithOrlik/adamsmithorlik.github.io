@@ -1,44 +1,42 @@
 [
-    {
-        "id": "book1",
-        "title": "1. [The Idiot by Dostoyevsky](https://en.wikipedia.org/wiki/The_Idiot)",
-        "date": "Jul 2021",
-        "subject": "Fiction",
-        "rating": "5",
-        "difficulty": "4",
-        "review": "The Idiot follows Prince Myshkin, the heir to a large fortune returning to Russian society after being treated since childhood in a Swiss sanatorium for his fits of epilepsy. The novel contrasts in the character of Myshkin the unadulterated goodness of a childlike innocence with the depravity and greed of Russian society. Myshkin is often confused for a symbol of naivety, but, far from it, Myshkin is the embodiment of the idea of Christ as a 'man-god.' Myshkin, nouveau riche, is cast headlong into the affairs of Russian high society, where he elicits great intrigue as a queer outsider and an easy dupe. Myshkins moral compass draws him to the suffering of each character, and finds himself overwhelmed in light of their competing burdens. \n\n \n\nI would not recommend this book for the uninitiated to Dostoyevsky. Its themes and motifs draw heavily on Dostoyevsky's larger body of work: suicide, revelation through epilepsy, human suffering, the 'shadow' of psychology, nihilism and atheism (embodied by my favourite character Ippolit, a bright young invalid with a terminal illness), and salvation through beauty and true love. However, this book had the single greatest impact on my life and still to this day I find myself pondering the story of Marie and the choices of Myshkin. In this novel Dostoyevsky's ability to evoke the diaphanous concept of meaning is at its most consummate.",
-        "cover": "images/books/ti.jpeg"
-    },
-    {
-        "id": "book2",
-        "title": "2. [Emile by Jean-Jacques Rousseau](https://en.wikipedia.org/wiki/Emile,_or_On_Education)",
-        "date": "Mar 2022",
-        "subject": "Philosophy",
-        "rating": "5",
-        "difficulty": "4",
-        "review": "Emile or On Education is a philosophical dissertation by the 18th century philosopher Jean-Jacques Rousseau on the proper education of the youth. Told through the narrative upbringing of a fictional boy Emile, Rousseau outlines the stages of life from boyhood to adulthood and the lessons suited to each to produce a man of sound mind, sensitive soul, and courageous heart. This book is largely credited with revolutionizing the perspective of children from being a bundle of ill-behaviours to be forcefully molded into civilized behaviours to blank-slate and innocent receptacles into which cultivation is ladeled through proper education. Emile's education might today be likened to the methods of Montessori; that is, child-centred, hands on, and exploratory. Science is taught only to answer curiosities, not to drum into a young mind cold, monotonous, and useless terminology. Respect for elders is taught through enlarging empathy, not as a seemingly arbitrary dictate. Religion is taught as a personal connection that the inner-spirit can seek out and convene with, not as unquestioned tradition imposing a burdensome conscience. And love is taught as devotion to an ideal, not as the lustful pursuit of objects. \n\n \n\n Rousseau is a polarizing figure. He himself fathered five children, all of whom he abandoned to an orphanage. I would be remiss not to remark that one should be wary of taking advise from those who do not follow it themselves. But if ever there was an exception to the rule, it is Rousseau. If it is the case that Rousseau reads as a magnanimous and deeply humane figure, while in his personal life falling well short of his own standards, we are still so much the better for having his fictions rather than having his facts. Whether or not you agree with his arguments--as I often do not myself--it is undeniable that his prose style is one of the most forceful, compelling, and beautiful of all of philosophy. It is worthwhile reading him if only to get a sense of the way in which he turns words on the page into music for the mind.",
-        "cover": "images/books/ejjr.jpeg"
-      },
-      {
-        "id": "book3",
-        "title": "3. [A Hero of Our Time by Mikhail Lermontov](https://en.wikipedia.org/wiki/A_Hero_of_Our_Time)",
-        "date": "Mar 2022",
-        "subject": "Fiction",
-        "rating": "5",
-        "difficulty": "4",
-        "review": " ",
-        "cover": "images/books/ahoot.jpeg"
-      }, 
-      {
-        "id": "book4",
-        "title": "4. [The Improvement of the Mind by Isaac Watts](https://www.amazon.ca/Improvement-Mind-Classic-Reprint/dp/B008H99QGA)",
-        "date": "Mar 2022",
-        "subject": "Fiction",
-        "rating": "5",
-        "difficulty": "4",
-        "review": " ",
-        "cover": "images/books/tiotm.jpeg"
-      }
-
-
+  {
+    "id": "book1",
+    "title": "1. [The Idiot by Dostoyevsky](https://en.wikipedia.org/wiki/The_Idiot)",
+    "date": "Jul 2021",
+    "subject": "Fiction",
+    "rating": "5",
+    "difficulty": "4",
+    "review": "The Idiot follows Prince Myshkin, the heir to a large fortune returning to Russian society after being treated since childhood in a Swiss sanatorium for his fits of epilepsy. The novel contrasts in the character of Myshkin the unadulterated goodness of a childlike innocence with the depravity and greed of Russian society. Myshkin is often confused for a symbol of naivety, but, far from it, Myshkin is the embodiment of the idea of Christ as a 'man-god.' Myshkin, nouveau riche, is cast headlong into the affairs of Russian high society, where he elicits great intrigue as a queer outsider and an easy dupe. Myshkins moral compass draws him to the suffering of each character, and finds himself overwhelmed in light of their competing burdens. \n\n \n\nI would not recommend this book for the uninitiated to Dostoyevsky. Its themes and motifs draw heavily on Dostoyevsky's larger body of work: suicide, revelation through epilepsy, human suffering, the 'shadow' of psychology, nihilism and atheism (embodied by my favourite character Ippolit, a bright young invalid with a terminal illness), and salvation through beauty and true love. However, this book had the single greatest impact on my life and still to this day I find myself pondering the story of Marie and the choices of Myshkin. In this novel Dostoyevsky's ability to evoke the diaphanous concept of meaning is at its most consummate.",
+    "cover": "images/books/ti.jpeg"
+  },
+  {
+    "id": "book2",
+    "title": "2. [Emile by Jean-Jacques Rousseau](https://en.wikipedia.org/wiki/Emile,_or_On_Education)",
+    "date": "Mar 2022",
+    "subject": "Philosophy",
+    "rating": "5",
+    "difficulty": "4",
+    "review": "Emile or On Education is a philosophical dissertation by the 18th century philosopher Jean-Jacques Rousseau on the proper education of the youth. Told through the narrative upbringing of a fictional boy Emile, Rousseau outlines the stages of life from boyhood to adulthood and the lessons suited to each to produce a man of sound mind, sensitive soul, and courageous heart. This book is largely credited with revolutionizing the perspective of children from being a bundle of ill-behaviours to be forcefully molded into civilized behaviours to blank-slate and innocent receptacles into which cultivation is ladeled through proper education. Emile's education might today be likened to the methods of Montessori; that is, child-centred, hands on, and exploratory. Science is taught only to answer curiosities, not to drum into a young mind cold, monotonous, and useless terminology. Respect for elders is taught through enlarging empathy, not as a seemingly arbitrary dictate. Religion is taught as a personal connection that the inner-spirit can seek out and convene with, not as unquestioned tradition imposing a burdensome conscience. And love is taught as devotion to an ideal, not as the lustful pursuit of objects. \n\n \n\n Rousseau is a polarizing figure. He himself fathered five children, all of whom he abandoned to an orphanage. I would be remiss not to remark that one should be wary of taking advise from those who do not follow it themselves. But if ever there was an exception to the rule, it is Rousseau. If it is the case that Rousseau reads as a magnanimous and deeply humane figure, while in his personal life falling well short of his own standards, we are still so much the better for having his fictions rather than having his facts. Whether or not you agree with his arguments--as I often do not myself--it is undeniable that his prose style is one of the most forceful, compelling, and beautiful of all of philosophy. It is worthwhile reading him if only to get a sense of the way in which he turns words on the page into music for the mind.",
+    "cover": "images/books/ejjr.jpeg"
+  },
+  {
+    "id": "book3",
+    "title": "3. [A Hero of Our Time by Mikhail Lermontov](https://en.wikipedia.org/wiki/A_Hero_of_Our_Time)",
+    "date": "Mar 2022",
+    "subject": "Fiction",
+    "rating": "5",
+    "difficulty": "4",
+    "review": "Coming soon.",
+    "cover": "images/books/ahoot.jpeg"
+  },
+  {
+    "id": "book4",
+    "title": "4. [The Improvement of the Mind by Isaac Watts](https://www.amazon.ca/Improvement-Mind-Classic-Reprint/dp/B008H99QGA)",
+    "date": "Mar 2022",
+    "subject": "Fiction",
+    "rating": "5",
+    "difficulty": "4",
+    "review": "Coming soon.",
+    "cover": "images/books/tiotm.jpeg"
+  }
 ]

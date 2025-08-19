@@ -14,15 +14,20 @@
   font-size: 2rem;
   margin: 0vw 15vw 0px 15vw;
   color: var(--secondary-color);
+  text-decoration: underline;
 }
 
-.research p,
+/* .research p, */
 .research .p {
   font-size: 1.2rem;
   text-align: justify;
   text-indent: 2rem;
   /* Add room left and right of text */
   margin: 0vw 15vw 1rem 15vw;
+}
+
+.research .p a {
+  color: #d38eee;
 }
 
 .research .content {

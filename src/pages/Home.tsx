@@ -3,14 +3,14 @@
 import React, { useState, useEffect } from "react";
 import './Home.css';
 import { MathJax } from 'better-react-mathjax';
-import Markdown from "markdown-to-jsx"; 
+import Markdown from "markdown-to-jsx";
 
 // swiper import 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation'; 
+import 'swiper/css/navigation';
 
 
 const Home: React.FC = () => {
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="home">
-        {/* Swiper Carousel */}
+      {/* Swiper Carousel */}
       <Swiper
         modules={[Pagination, Navigation]}
         spaceBetween={20}
@@ -40,7 +40,7 @@ const Home: React.FC = () => {
         className="swiper-container"
       >
         <SwiperSlide>
-          <img src="/images/slide1.JPG" alt="Slide 1" />
+          <img src="/images/slide1.jpg" alt="Slide 1" />
         </SwiperSlide>
         <SwiperSlide>
           <img src="/images/slide2.jpg" alt="Slide 2" />

@@ -1,70 +1,78 @@
 /* src/pages/Home.css */
 
 .home {
-    padding: 0px;
-    font-family: 'CMU Serif', serif; /* LaTeX-style font */
-    /* color: #333; */
-    line-height: 1.6;
-  }
-  
-  .home h1 {
-    font-size: 5vw;
-    margin-bottom: 0px;
-    text-align: center;
-  }
+  padding: 0px;
+  font-family: 'CMU Serif', serif;
+  /* LaTeX-style font */
+  /* color: #333; */
+  line-height: 1.6;
+}
 
-  .home h2 {
-    font-size: 2rem;
-    margin: 0vw 15vw 0px 15vw;
-    /* text-align: center; */
-    color: var(--primary-color);
-  }
-  
-  .home p {
-    font-size: 1rem;
-    text-align: justify; 
-    text-indent: 2rem;
-    /* Add room left and right of text */
-    margin: 0vw 15vw 1rem 15vw;
-  }
+.home h1 {
+  font-size: 5vw;
+  margin-bottom: 0px;
+  text-align: center;
+}
 
-  .home p a {
-    color: #d38eee;
-  }
+.home h2 {
+  font-size: 2rem;
+  margin: 0vw 15vw 0px 15vw;
+  /* text-align: center; */
+  color: var(--primary-color);
+}
 
-  /* Swiper container */
+.home p {
+  font-size: 1rem;
+  text-align: justify;
+  text-indent: 2rem;
+  /* Add room left and right of text */
+  margin: 0vw 15vw 1rem 15vw;
+}
+
+.home p a {
+  color: #d38eee;
+}
+
+/* Swiper container */
 .swiper-container {
-  width: 40%;
-  max-width: 800px;
-  margin: 2vw 0vw 2vw 0vw; /* Center the container */
-  border-radius: 2vw; /* Rounded corners */
+  width: 400px;
+  /* fixed width */
+  height: 400px;
+  /* fixed height */
+  margin: 2vw 0vw;
+  /* keep margins */
+  border-radius: 2vw;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
-} 
+}
 
 /* Swiper slides */
 .swiper-container img {
   width: 100%;
-  height: 40vh;
+  height: 100%;
+  object-fit: contain;
+  /* show full image without cropping */
   display: block;
-  object-fit: cover;
 }
 
 /* Pagination dots */
 .swiper-pagination-bullet {
-  background: #7b31ca; /* Primary color for dots */
+  background: #7b31ca;
+  /* Primary color for dots */
   opacity: 0.7;
 }
 
 .swiper-pagination-bullet-active {
-  background: #7b31ca; /* Highlighted dot color */
+  background: #7b31ca;
+  /* Highlighted dot color */
   opacity: 1;
 }
 
 /* Navigation buttons */
 .swiper-button-prev,
 .swiper-button-next {
-  color: #7b31ca; /* Button color */
+  color: #7b31ca;
+  /* Button color */
   opacity: 0.7;
 }
 
