@@ -27,8 +27,8 @@
 .blog p {
   font-size: 1.2rem;
   line-height: 1.5;
-  text-align: justify;
-  text-indent: 1rem;
+  text-align: left;
+  text-indent: 0;
   margin: 1rem 0rem 1rem 0;
 }
 
@@ -42,7 +42,7 @@
   font-size: 1.2rem;
   line-height: 1.8rem;
   margin: 0 auto;
-  text-align: justify;
+  text-align: left;
   max-width: 80%;
 }
 
@@ -102,4 +102,32 @@
 
 .p {
   margin-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+  .blog {
+    max-width: 98%;
+    margin: 0 1vw;
+  }
+  .blog-content {
+    max-width: 98%;
+    margin: 0 1vw;
+  }
+  .blog h1 {
+    font-size: 1.3rem;
+    margin: 0 0.5vw 1vh 0.5vw;
+  }
+  .blog h2 {
+    font-size: 1rem;
+    margin: 1rem 0rem 1rem 0rem;
+  }
+    .blog h1 {
+      font-size: 1.3rem;
+      margin: 0 0.5vw 1vh 0.5vw;
+      text-align: center;
+    }
+  .blog p {
+    font-size: 1rem;
+    margin: 1rem 0.5vw 1rem 0.5vw;
+  }
 }

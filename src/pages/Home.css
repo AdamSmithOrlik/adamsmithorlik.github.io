@@ -5,7 +5,7 @@
   font-family: 'CMU Serif', serif;
   /* LaTeX-style font */
   /* color: #333; */
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .home h1 {
@@ -16,17 +16,17 @@
 
 .home h2 {
   font-size: 2rem;
-  margin: 0vw 15vw 0px 15vw;
+  margin: 0vw 3rem 0rem 3rem;
   /* text-align: center; */
   color: var(--primary-color);
 }
 
 .home p {
   font-size: 1rem;
-  text-align: justify;
-  text-indent: 2rem;
+  /* text-align: left-justify; */
+  text-indent:1rem;
   /* Add room left and right of text */
-  margin: 0vw 15vw 1rem 15vw;
+  margin: 0vw 3rem 1rem 3rem;
 }
 
 .home p a {

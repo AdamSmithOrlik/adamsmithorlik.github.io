@@ -22,6 +22,12 @@ body, .app {
     color: var(--text-color);
     font-family: 'CMU Serif', serif; /* LaTeX-style font */
     transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100vw;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    max-width: 100vw;
+    /* height: 100vh; */
 }
 
 /* Ensure Content Areas and Links Adapt */
@@ -52,4 +58,58 @@ a {
     background-color: var(--background-color);
     color: var(--text-color);
 }
+
+/* General mobile styles */
+@media (max-width: 600px) {
+    body {
+        font-size: 1rem;
+        padding: 0 8px;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+    }
+
+    p, li, .content, .main, .reading-page, .home, .writing, .research {
+        font-size: 1rem;
+        line-height: 1.6;
+        letter-spacing: 0.01em;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.2em;
+        margin: 0.5em 0;
+    }
+
+    img, .slide-image {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .container, .content, .main {
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header, .footer {
+        padding: 8px;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        padding: 8px 0;
+    }
+    }
+
+    .slide-image {
+        max-height: 40vh;
+        object-fit: contain;
+    }
+
+    p, li {
+        font-size: 1em;
+        word-break: break-word;
+    }
 

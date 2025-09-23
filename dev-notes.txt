@@ -42,3 +42,6 @@ TODO:
 - Add fitness page (timeline with pictures, potentially a space for clients)
 
 
+08/19/2025
+Messed around with the text size and margins of the homepage. 
+Need to figure out how to get this to look good with mobile and desktop. Currently there seems to be extra padding to the right of the text on the mobile version. 

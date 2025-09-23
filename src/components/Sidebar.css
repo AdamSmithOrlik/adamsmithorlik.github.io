@@ -27,7 +27,7 @@
 }
 
 .hamburger .line {
-  height: 0.3rem;
+  height: 0.25rem;
   background: var(--secondary-color);
   border-radius: 1rem;
   width: 100%;
@@ -87,4 +87,28 @@
 .sidebar nav ul li {
   margin: 0.5rem 0;
   font-size: 5vw 5vw;
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 80vw;
+    padding: 32px 16px 16px 16px;
+    font-size: 1.2rem;
+  }
+  .sidebar nav ul li a {
+    font-size: 2rem;
+    padding: 16px 0;
+  }
+  .sidebar nav ul {
+    margin: 2rem 0;
+  }
+  .hamburger {
+    top: 16px;
+    left: 16px;
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .overlay {
+    background: rgba(0,0,0,0.3);
+  }
 }

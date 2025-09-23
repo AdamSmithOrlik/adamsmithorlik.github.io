@@ -141,4 +141,9 @@
   .book-meta {
     font-size: 1rem;
   }
+
+  /* Fix nav for mobile */
+    .reading-nav {
+      display: none;
+    }
 }
