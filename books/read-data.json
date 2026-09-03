@@ -66,7 +66,27 @@
     "subject": "Philosophy",
     "rating": "5",
     "difficulty": "4",
-    "review": "Language, Truth, and Logic is a short philosophy book by AJ Ayer in which he advances the principle of verification as the criterion of meaning. Ayer argues that a statement is only literally significant or meaningful if it can in principle be empirically verified. This simple idea has immense philisophical implications, damning to the realm of metaphysics much of the history of philosophy. In this short book Ayer shows how the principle of verification can be used to solve or resolve many of the open problems of philosophy. Although many of the ideas have since been refuted or refined, the style of argumentation and the contrarian spirit of Ayer make this book an enjoyable read. Personally, I am fond of books that present a new and simple idea and then proceed to develop the consequences as it applies to the history of philosophyy. Moreover, as a student of Hume, I found the solutions presented by Ayer to the Problem of Induction and moral Subjectivisim particularily useful.",
+    "review": "Language, Truth, and Logic is a short philosophy book by A.J. Ayer in which he advances the principle of verification as the criterion of meaning. Ayer argues that a statement is only literally significant or meaningful if it can in principle be empirically verified. This simple idea has immense philosophical implications, damning to the realm of metaphysics much of the history of philosophy. In this short book Ayer shows how the principle of verification can be used to solve or resolve many of the open problems of philosophy. Although many of the ideas have since been refuted or refined, the style of argumentation and the contrarian spirit of Ayer make this book an enjoyable read. For my part, this brand of empiricism, however dated, appeals to me as it reduces the complexity of the world to a simple logic of sense-contents and a scientific reframing of language wherein sentences serve as hypotheses or else they are nonsense. Moreover, as a long-time student of Hume, I found the solutions presented by Ayer to the Problem of Induction and Moral Subjectivism particularly interesting.",
     "cover": "images/books/ltl.jpeg"
+  },
+  {
+    "id": "book7",
+    "title": "[Surely You're Joking, Mr. Feynman!](https://en.wikipedia.org/wiki/Surely_You%27re_Joking,_Mr._Feynman!)",
+    "date": "Sep 2025",
+    "subject": "Autobiography, Physics",
+    "rating": "4.5",
+    "difficulty": "2",
+    "review": "Surely You're Joking, Mr. Feynman! is a collection of stories from the life and career of one of the greatest physicists of the 20th century. Apart from the rather fantastical nature of the stories, ranging from famous exploits of Feynman's unique brilliance (fixing radios as a child, stumping mathematicians with his lightning quick calculation techniques, being the most junior member of the Manhattan Project) to more peculiar adventures (being in a Brazillian carnival band, testifying on behalf of a strip club), Feynman showcases his insatiable curiosity and love for life and new experiences. A common thread emerges throughout the book, that is, the genius for which he was well-known was not a mystery; his unique genius was always the product of his love of problem-solving, his desire to break through the uncomfortable feeling of not knowing, and his openness to new and unconventional ideas. SYJMF is an immensely enjoyable read, and I would recommend it to everyone despite interest in physics. There are life lessons in this book that extend well beyond the realm of science, from a man whose Nobel Prize in Physics is almost the least interesting thing about him. The concluding chapter on 'cargo science' is a fantastic summary of the true spirit of science, from one of the greatest practitioners of the craft.",
+    "cover": "images/books/syjmf.jpg"
+  },
+  {
+    "id": "book8",
+    "title": "[Notes on Being a Man](https://en.wikipedia.org/wiki/Notes_on_Being_a_Man)",
+    "date": "Oct 2025",
+    "subject": "Culture, Self-Help",
+    "rating": "3",
+    "difficulty": "2",
+    "review": "This book was advertised by the author, Scott Galloway, as addressing the crises of young men. Men make up 80% of suicides, are 12 time more likely to be incarcerated, 3 times more likely to be homeless, 4 times as likely to die of overdose, and so on. The impression I had was that this book would focus on the root cause of the crises facing young men, providing a positive alternative to masculinity, against the frequently maligned 'toxic-masculinity' as represented by the surge in popularity of figures like Andrew Tate, Sneako, and other online personalities of the growing 'red-pill' and 'manosphere' movements. However, that was not at all the case. This book is rather a loose auto-biography of Galloway's personal development as a man. When he does touch on masculinity, it is usually with regard to a highly personal experience, like how his own father fell short, how he bonded with his fraternity brothers, how he cared for his ailing mother, and how he nurtures his two boys. What little there is about the broader culture is interestingly not about the epidemic of men's issues at all, but rather Galloway's personal mea culpa for being a white man in a time and place in America when success was guaranteed not earned. Galloway is a great writer, and the book is an enjoyable read, it is just not the book I expected it to be.",
+    "cover": "images/books/nobam.jpg"
   }
 ]
