@@ -1,5 +1,13 @@
 /* Default Light Mode */
 :root {
+    --reading-width: 45rem;
+    --body-font-size: 1.125rem;
+    --body-line-height: 1.7;
+    --paragraph-gap: 1rem;
+    --heading-gap: 0.75rem;
+    --section-gap: 2rem;
+    --title-gap: 1.5rem;
+    --link-color: #d38eee;
     --background-color: #ffffff;
     --text-color: #333;
     --secondary-color: #555;
@@ -22,11 +30,11 @@ body, .app {
     color: var(--text-color);
     font-family: 'CMU Serif', serif; /* LaTeX-style font */
     transition: background-color 0.3s ease, color 0.3s ease;
-    width: 100vw;
-    font-size: 1.15rem;
-    line-height: 1.7;
+    width: 100%;
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
     letter-spacing: 0.01em;
-    max-width: 100vw;
+    max-width: 100%;
     /* height: 100vh; */
 }
 
@@ -50,7 +58,7 @@ p {
 
 /* Ensure Links Are Visible in Dark Mode */
 a {
-    color: var(--secondary-color);
+    color: var(--link-color);
 }
 
 /* Sidebar and Footer Adjustments */
@@ -61,22 +69,12 @@ a {
 
 /* General mobile styles */
 @media (max-width: 600px) {
-    body {
-        font-size: 1rem;
-        padding: 0 8px;
-        line-height: 1.6;
-        letter-spacing: 0.01em;
-    }
-
-    p, li, .content, .main, .reading-page, .home, .writing, .research {
-        font-size: 1rem;
-        line-height: 1.6;
-        letter-spacing: 0.01em;
+    :root {
+        --body-font-size: 1rem;
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-size: 1.2em;
-        margin: 0.5em 0;
     }
 
     img, .slide-image {
@@ -92,7 +90,7 @@ a {
         box-sizing: border-box;
     }
 
-    .header, .footer {
+    .footer {
         padding: 8px;
         text-align: center;
     }
@@ -113,3 +111,44 @@ a {
         word-break: break-word;
     }
 
+
+/* Shared prose rhythm across all five pages, including Markdown content. */
+.home p,
+.research .p,
+.blog-content p,
+.blog-content .p,
+.writing p,
+.book-review,
+.reading-section > p {
+    font-size: var(--body-font-size);
+    line-height: var(--body-line-height);
+    text-align: left;
+    text-indent: 0;
+    margin: 0 0 var(--paragraph-gap);
+}
+
+.book-review p {
+    margin: 0 0 var(--paragraph-gap);
+}
+
+.book-review p:last-child {
+    margin-bottom: 0;
+}
+
+.content ul, .content ol {
+    margin-bottom: var(--paragraph-gap);
+}
+
+.content li + li {
+    margin-top: 0.5rem;
+}
+
+.home h2:first-child,
+.research .content h2:first-child,
+.blog-content h2:first-child {
+    margin-top: 0;
+}
+
+:is(.home, .research, .blog-content) :is(h3, h4, h5, h6) {
+    margin: var(--section-gap) 0 var(--heading-gap);
+}

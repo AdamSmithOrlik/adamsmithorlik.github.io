@@ -1,5 +1,7 @@
 ## Self-Interacting Dark Matter and the Jeans Model
 
+<img src="/images/jmds.jpg" alt="jm" width="500px" style="display: block; margin: 0 auto;">
+
 My main research project concerns the effect of self-interacting dark matter (\\( \rm SIDM \\)) on the morphology of dark matter halos. \\( \\Lambda \rm CDM \\) is the current standard cosmological model, wherein the structure of the Universe is dictated by the cosmological constant, \\( \\Lambda \\), and a cold, collisionless, dark matter component, \\( \rm CDM \\). However, on length scales less than an \\( \rm Mpc \\) \\( \rm CDM \\) faces challenges. Namely, observations of dwarf and low-surface-brightness dark matter (DM) halos prefer nearly constant density cores, while \\( \rm CDM \\)-only simulations predict cores with a steep rising density called a cusp. The so-called core-cusp problem motivated the self-interacting model, proposed by Spergel and Steindhart in 1999. This model modifies the inner, dense part of the halo where interactions are frequent while retaining the \\( \rm CDM \\)-like properties in the outer halo where interactions are rare enough to treat the region as effectively collisionless, making it a lightweight and economical solution to the core-cusp problem.
 
 Apart from producing the cored profiles required by observation, frequent self-interaction also tend to erase ellipticity, causing halos to be more spherical than predicted by \\( \rm CDM \\) simulations. This predication of \\( \rm SIDM \\)halos provides an observational probe with which researchers can distinguish between \\( \rm CDM \\) and \\( \rm SIDM \\), possibly uncovering clues as to the particle nature of DM.
@@ -14,17 +16,9 @@ We have tested this model on a suite of simulations generated with a cross-secti
 
 For more information you can read our paper on the arXiv [here](https://arxiv.org/pdf/2511.10765)
 
-## Gravitational Waves and Dark Matter Spikes
-
-Binary black hole mergers have become a topic of extreme interest following the observation of the first gravitational waves on Earth in 2015. This observation opened a new frontier for astronomy, a new window into the inner-workings of the Universe. When two black holes merge, in what is one of the most violent events to take place in the Universe, the very fabric of spacetime is perturbed in such a way as to send gravitational waves rippling through space. Think a large boulder hitting a placid lake. Large waves propagate out from the center in all directions. The same happens with black hole mergers, but instead of water carrying the waves, its spacetime. The signature of these waves is well understood and predicted within General Relativity. However, minor differences in these waveforms can provide information about the medium through which the gravitational waves travelled before detection.
-
-In particular, dark matter is expected to accrue around black holes, forming so-called dark matter spikes. Due to the large gravitational potential of black holes, the density of dark matter can be extremely large in the region surrounding the binary. Depending on the model, \\( \rm CDM \\) or \\( \rm SIDM \\), the waveforms from the merger can bear the signature of the dark matter through which it traveled.
-
-My work on gravitational waves and dark matter spikes proposed a Lagrangian method to calculate the Post-Newtonian corrections to the expected gravitational waveforms in the case of fully relativistic dark matter spikes. We found that the waveform is predictably different for the case of a relativistic dark matter spike, offering a new analytic method for solving for such waveforms giving certain properties of the dark matter and the black holes.
-
-For more information you can read our paper on the arXiv [here](https://arxiv.org/pdf/2401.06084).
-
 ## The Impact of the LMC on Direct Detection of Dark Matter in the Milky Way
+
+<img src="/images/lmcdm.jpg" alt="lmc" width="500px" style="display: block; margin: 0 auto;">
 
 Dark matter direct detection experiments seek to detect WIMPs (Weakly Interacting Massive Particles), which, as the name suggests, interact weakly with Standard Model particles. Large detectors filled with noble gases are placed deep underground around the world in radio-pure environments waiting to detect one such interaction that would give direct evidence of dark matter; yet none have made a positive detection to date. As part of their models, these direct detection experiments make some assumptions about dark matter–its properties, its velocity distribution, and its density near Earth–that inform the expectations for a possible detection. The basic set of assumptions are known as the Standard Halo Model (SHM).
 
@@ -35,3 +29,16 @@ To investigate this possibility we used hydrodynamical simulations from the Auri
 What we found was that the recent passage of an LMC-like satellite around a MW-like host galaxy increased the incidence of high velocity DM particles in the Solar region of the MW-like DM halo. This population of high speed DM particles has a non-negligible impact on the velocity distribution of DM in the Solar region, one of the key astrophysical inputs to the direct detection models, and leads to and order of magnitude or greater shift in the sensitivity of experiments, especially for low mass DM models.
 
 For more information you can read our paper on the arXiv [here](https://arxiv.org/pdf/2302.04281).
+## Gravitational Waves and Dark Matter Spikes
+
+<img src="/images/pndm.jpg" alt="pn" width="500px" style="display: block; margin: 0 auto;">
+
+Binary black hole mergers have become a topic of extreme interest following the observation of the first gravitational waves on Earth in 2015. This observation opened a new frontier for astronomy, a new window into the inner-workings of the Universe. When two black holes merge, in what is one of the most violent events to take place in the Universe, the very fabric of spacetime is perturbed in such a way as to send gravitational waves rippling through space. Think a large boulder hitting a placid lake. Large waves propagate out from the center in all directions. The same happens with black hole mergers, but instead of water carrying the waves, its spacetime. The signature of these waves is well understood and predicted within General Relativity. However, minor differences in these waveforms can provide information about the medium through which the gravitational waves travelled before detection.
+
+In particular, dark matter is expected to accrue around black holes, forming so-called dark matter spikes. Due to the large gravitational potential of black holes, the density of dark matter can be extremely large in the region surrounding the binary. Depending on the model, \\( \rm CDM \\) or \\( \rm SIDM \\), the waveforms from the merger can bear the signature of the dark matter through which it traveled.
+
+My work on gravitational waves and dark matter spikes proposed a Lagrangian method to calculate the Post-Newtonian corrections to the expected gravitational waveforms in the case of fully relativistic dark matter spikes. We found that the waveform is predictably different for the case of a relativistic dark matter spike, offering a new analytic method for solving for such waveforms giving certain properties of the dark matter and the black holes.
+
+For more information you can read our paper on the arXiv [here](https://arxiv.org/pdf/2401.06084).
+
+

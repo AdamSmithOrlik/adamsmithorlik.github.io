@@ -14,9 +14,27 @@ interface Book {
   cover: string;
 }
 
+// Keep anchor links useful even when their target section is collapsed.
+const openReadingSection = (hash: string) => {
+  const section = document.getElementById(hash.slice(1));
+  if (section instanceof HTMLDetailsElement) {
+    section.open = true;
+  }
+};
+
 const Reading: React.FC = () => {
   const [books, setReadBooks] = useState<Book[]>([]);
   const [favbooks, setFavoriteBooks] = useState<Book[]>([]);
+
+  useEffect(() => {
+    const revealHashTarget = () => {
+      openReadingSection(window.location.hash);
+      document.getElementById(window.location.hash.slice(1))?.scrollIntoView();
+    };
+    revealHashTarget();
+    window.addEventListener("hashchange", revealHashTarget);
+    return () => window.removeEventListener("hashchange", revealHashTarget);
+  }, []);
 
   useEffect(() => {
     // Fetch Read Books
@@ -42,16 +60,16 @@ const Reading: React.FC = () => {
     <div className="reading-page">
       <h1>Reading</h1>
 
-      <nav className="reading-nav">
-        <a href="#books-read">Books Read</a>
-        <a href="#favorites">Favourites</a>
-        <a href="#to-read">To Read</a>
-        <a href="#quotes">Quotes</a>
-        <a href="#authors">Authors</a>
+      <nav className="reading-nav" aria-label="Reading sections">
+        <a href="#books-read" onClick={() => openReadingSection("#books-read")}>Book Reviews</a>
+        <a href="#favorites" onClick={() => openReadingSection("#favorites")}>Favourites</a>
+        <a href="#to-read" onClick={() => openReadingSection("#to-read")}>To Read</a>
+        <a href="#quotes" onClick={() => openReadingSection("#quotes")}>Quotes</a>
+        <a href="#authors" onClick={() => openReadingSection("#authors")}>Authors</a>
       </nav>
 
-      <div id="books-read" className="reading-section">
-        <h2>Books Read</h2>
+      <details id="books-read" className="reading-section">
+        <summary><h2>Book Reviews</h2></summary>
         <div className="book-list">
           {books.map((book) => (
             <div key={book.id} className="book-entry">
@@ -73,10 +91,10 @@ const Reading: React.FC = () => {
             </div>
           ))}
         </div>
-      </div>
+      </details>
 
-      <div id="favorites" className="reading-section">
-        <h2>Favourites</h2>
+      <details id="favorites" className="reading-section">
+        <summary><h2>Favourites</h2></summary>
         <div className="book-list">
           {favbooks.map((favbooks) => (
             <div key={favbooks.id} className="book-entry">
@@ -85,31 +103,31 @@ const Reading: React.FC = () => {
                 <h3>
                   <Markdown options={{ forceBlock: false }}>{favbooks.title}</Markdown>
                 </h3>
-                <p className="book-review">
+                <div className="book-review">
                 {Array.isArray(favbooks.review)
                   ? favbooks.review.map((para, index) => <p key={index}>{para}</p>) // Handle array of paragraphs
                   : favbooks.review.split("\n").map((para, index) => <p key={index}>{para}</p>)} 
-                </p>
+                </div>
               </div>
             </div>
           ))}
         </div>
-      </div>
+      </details>
 
-      <div id="to-read" className="reading-section">
-        <h2>To Read</h2>
+      <details id="to-read" className="reading-section">
+        <summary><h2>To Read</h2></summary>
         <p>placeholder</p>
-      </div>
+      </details>
 
-      <div id="quotes" className="reading-section">
-        <h2>Quotes</h2>
+      <details id="quotes" className="reading-section">
+        <summary><h2>Quotes</h2></summary>
         <p>placeholder</p>
-      </div>
+      </details>
 
-      <div id="authors" className="reading-section">
-        <h2>Authors</h2>
+      <details id="authors" className="reading-section">
+        <summary><h2>Authors</h2></summary>
         <p>Coming soon...</p>
-      </div>
+      </details>
 
     </div>
   );

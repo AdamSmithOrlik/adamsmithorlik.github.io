@@ -5,43 +5,31 @@
   font-family: 'CMU Serif', serif;
   /* LaTeX-style font */
   /* color: #333; */
-  line-height: 1.5;
 }
 
 .home h1 {
-  font-size: 5vw;
-  margin-bottom: 0px;
+  font-size: clamp(2rem, 5vw, 3rem);
   text-align: center;
+  margin: 0 0 var(--title-gap);
 }
 
 .home h2 {
   font-size: 2rem;
-  margin: 0vw 3rem 0rem 3rem;
   /* text-align: center; */
   color: var(--primary-color);
-}
-
-.home p {
-  font-size: 1rem;
-  /* text-align: left-justify; */
-  text-indent:1rem;
-  /* Add room left and right of text */
-  margin: 0vw 3rem 1rem 3rem;
-}
-
-.home p a {
-  color: #d38eee;
+  margin: var(--section-gap) 0 var(--heading-gap);
 }
 
 /* Swiper container */
 .swiper-container {
-  width: 400px;
+  width: min(100%, 400px);
   /* fixed width */
-  height: 400px;
+  height: auto;
+  aspect-ratio: 1;
   /* fixed height */
-  margin: 2vw 0vw;
+  margin: 1.5rem auto;
   /* keep margins */
-  border-radius: 2vw;
+  border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
 }

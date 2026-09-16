@@ -21,5 +21,29 @@
   .content {
     flex: 1; /* Fills remaining space between header and footer */
     margin-top: 0;
-    height: full;
+  }
+
+  /* One shared reading column for every route. */
+  .app > .content {
+    width: min(var(--reading-width), calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 1rem 0 3rem;
+    min-width: 0;
+  }
+
+  .app > .content:has(.blog), .app > .content:has(.blog-error) {
+    margin-top: 4.5rem;
+  }
+
+  .content img {
+    max-width: 100%;
+  }
+
+  .content pre, .content mjx-container[display="true"] {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  .content ul, .content ol {
+    padding-left: 1.5rem;
   }

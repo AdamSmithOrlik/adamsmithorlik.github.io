@@ -3,32 +3,19 @@
   font-family: 'CMU Serif', serif;
   /* LaTeX-style font */
   /* color: #333; */
-  line-height: 1.8;
 }
 
 .writing h1 {
   font-size: 2.5rem;
-  margin-bottom: 0px;
   text-align: center;
+  margin: 0 0 var(--title-gap);
 }
 
 .writing h2 {
   font-size: 2rem;
-  margin: 0rem 0rem 0rem 0rem;
   text-align: center;
   /* color: #666; */
-}
-
-.writing p {
-  font-size: 1rem;
-  text-align: left;
-  /* Add room left and right of text */
-  margin: 0px 2vw 1rem 2vw;
-  text-indent: 0rem;
-}
-
-.writing p a {
-  color: #d38eee;
+  margin: var(--section-gap) 0 var(--heading-gap);
 }
 
 .card-meta {
@@ -37,25 +24,27 @@
   justify-content: space-between;
   /* Space between date and subject */
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
   /* Vertically center the items */
-  margin-bottom: 10px;
+  margin-bottom: var(--heading-gap);
   /* Add space below the row */
 }
 
 /* Styling for the date */
 .card-meta h3 {
-  font-size: 1.5vw;
+  font-size: 0.95rem;
   color: var(--secondary-color);
   /* Example color */
-  margin: 0px 0px 0px 1vw;
+  margin: 0;
 }
 
 /* Styling for the subject */
 .card-meta h4 {
-  font-size: 1.5vw;
+  font-size: 0.95rem;
   color: var(--secondary-color);
   /* Example color */
-  margin: 0px 1vw;
+  margin: 0;
   /* Remove default margins */
 }
 
@@ -64,7 +53,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin: 0px 8vw 0px 8vw;
+  margin: 0;
 }
 
 /* Individual card styles */
@@ -85,14 +74,8 @@
 .card h2 {
   font-size: 1.3rem;
   margin-top: 0.5rem;
-  color: var(--text-color);
+  color: var(--link-color);
 }
-
-.card p {
-  font-size: 1rem;
-  color: var(--secondary-color);
-}
-
 
 /* Card hover effects */
 .card:hover {
@@ -103,7 +86,7 @@
 /* Mobile styles for Writing page */
 @media (max-width: 600px) {
   .cards-container {
-    margin: 0px 2vw 0px 2vw;
+    margin: 0;
     gap: 0.5rem;
   }
   .card {
@@ -116,15 +99,11 @@
   .writing h2 {
     font-size: 1.1rem;
   }
-  .writing p {
-    font-size: 0.95rem;
-    margin: 0px 0vw 1rem 0vw;
-  }
   .card h2 {
     font-size: 1.1rem;
     margin-top: 0.3rem;
   }
-  .card p {
-    font-size: 0.95rem;
-  }
+}
+.card p {
+  color: var(--secondary-color);
 }

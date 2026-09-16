@@ -1,46 +1,15 @@
-/* src/components/Header.css */
-
-/* Scale the header's size dynamically */
 .header {
-  position: relative; /* Keeps it at the top */
-  top: 0;
-  left: 0;
-  width: 100%; /* Spans the entire width of the viewport */
+  width: min(100%, 55rem);
+  margin: 0 auto;
+  padding: 4.5rem 1rem 1rem;
   text-align: center;
-  font-size: 6vw; /* Font size scales with the viewport width */
+  font-size: clamp(1.5rem, 5vw, 3rem);
   font-weight: bold;
-  /* color: #333; */
-  padding: 0 0; /* Padding scales with the viewport height */
-  z-index: 1000;
 }
 
 .header .subtitle {
-  font-size: 2vw; /* Slightly smaller than the name, scalable */
-  font-weight: 300; /* Lighter font weight for subtitle */
-  margin-top: 1vh; /* Add some spacing below the name */
-  color: var(--secondary-color); 
-}
-
-/* Add spacing to ensure content is not overlapped */
-body {
-  padding-top: 3vh; /* Adjust based on header's height */
-}
-
-/* Optional: Add scaling for larger screens */
-@media (min-width: 1200px) {
-  .header {
-    font-size: 3vw; /* Slightly smaller for very large screens */
-  }
-}
-
-/* Mobile: Make header and subtitle readable and balanced */
-@media (max-width: 600px) {
-  .header {
-    font-size: 2rem;
-    padding: 8px 0;
-  }
-  .header .subtitle {
-    font-size: 1.1rem;
-    margin-top: 0.5rem;
-  }
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  color: var(--secondary-color);
 }

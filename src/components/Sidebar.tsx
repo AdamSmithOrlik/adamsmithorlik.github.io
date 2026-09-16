@@ -13,17 +13,19 @@ const Sidebar: React.FC = () => {
   return (
     <>
       {/* Hamburger Icon */}
-      <div className="hamburger" onClick={toggleSidebar}>
-        <div className="line"></div>
-        <div className="line"></div>
-        <div className="line"></div>
-      </div>
+      <button type="button" className="hamburger" onClick={toggleSidebar}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+        aria-expanded={isOpen} aria-controls="site-menu">
+        <span className="line" aria-hidden="true"></span>
+        <span className="line" aria-hidden="true"></span>
+        <span className="line" aria-hidden="true"></span>
+      </button>
 
       {/* Overlay */}
       {isOpen && <div className="overlay" onClick={closeSidebar}></div>}
 
       {/* Sidebar */}
-      <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+      <div id="site-menu" className={`sidebar ${isOpen ? 'open' : ''}`}>
         <nav>
           <ul>
             {/* Home link */}

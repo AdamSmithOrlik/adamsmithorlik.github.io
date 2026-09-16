@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
                 <ul>
                     <li>Email: <a href="mailto:asorlik@yorku.ca">asorlik@yorku.ca</a> </li>
                     {/* <li>Personal Email: <a href="mailto:adam.smith2214@gmail.com">adam.smith2214@gmail.com</a> </li> */}
-                    <li>Number: 1+(613)-898-4555</li>
+                    <li>Number: 1+(613)-898-####</li>
                 </ul>
             </div>
             <div className="footer-column">

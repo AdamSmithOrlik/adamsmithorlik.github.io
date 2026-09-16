@@ -1,54 +1,38 @@
 .blog {
   font-family: 'CMU Serif', serif;
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .blog h1 {
   font-size: 2rem;
   color: var(--text-color);
-  margin: 0 4vw 1vh 4vw;
+  margin: 0 0 var(--title-gap);
 }
 
 .blog h2 {
   font-size: 1.5rem;
   color: var(--text-color);
-  margin: 1rem 0rem 1rem 0rem;
+  margin: var(--section-gap) 0 var(--heading-gap);
 }
 
 .blog-meta {
   display: flex;
   justify-content: space-between;
-  font-size: 2vw;
+  font-size: 1rem;
   color: var(--secondary-color);
-  margin: 0vw 2vw 1vw 2vw;
-}
-
-.blog p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  text-align: left;
-  text-indent: 0;
-  margin: 1rem 0rem 1rem 0;
-}
-
-.blog p a {
-  color: #d38eee;
+  margin: 0 0 1rem;
+  flex-wrap: wrap;
+  gap: 0.25rem 1rem;
 }
 
 .blog-content {
   font-family: 'CMU serif', serif;
   /* color: #111; */
-  font-size: 1.2rem;
-  line-height: 1.8rem;
   margin: 0 auto;
   text-align: left;
-  max-width: 80%;
+  max-width: 100%;
 }
-
-/* .blog-content p {
-  margin: 2.5rem 0rem 0.5rem 0;
-} */
 
 .blog-end-dots {
   display: flex;
@@ -64,7 +48,7 @@
 }
 
 .blog-end-dots span {
-  margin: 0 2vw;
+  margin: 0 1rem;
   /* Add spacing between dots */
 }
 
@@ -82,52 +66,10 @@
   /* Optional: adds slight rounding to corners */
 }
 
-/* Add spacing for paragraphs that follow images */
-.blog-content img+p {
-  margin-top: 1.5rem;
-}
-
-/* Add spacing for paragraphs that precede images */
-.blog-content p+img {
-  margin-top: 1.5rem;
-}
-
 .blog-divider {
-  margin: 0 0vw 4vw 0vw;
+  margin: 0 0 2rem;
   border: 0;
-  height: 0.1vw;
+  height: 1px;
   background: var(--secondary-color);
   border-radius: 2vw;
-}
-
-.p {
-  margin-bottom: 1em;
-}
-
-@media (max-width: 600px) {
-  .blog {
-    max-width: 98%;
-    margin: 0 1vw;
-  }
-  .blog-content {
-    max-width: 98%;
-    margin: 0 1vw;
-  }
-  .blog h1 {
-    font-size: 1.3rem;
-    margin: 0 0.5vw 1vh 0.5vw;
-  }
-  .blog h2 {
-    font-size: 1rem;
-    margin: 1rem 0rem 1rem 0rem;
-  }
-    .blog h1 {
-      font-size: 1.3rem;
-      margin: 0 0.5vw 1vh 0.5vw;
-      text-align: center;
-    }
-  .blog p {
-    font-size: 1rem;
-    margin: 1rem 0.5vw 1rem 0.5vw;
-  }
 }
