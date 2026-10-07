@@ -41,7 +41,7 @@ I also wanted to add the ability for the user to weight the importance of each t
 where  \\( D_t \\)  is the total distance per topic, omega is the user’s assigned weight, \\( U \\) is the user value,  \\( P \\) is the party value, and  \\( i \\) traverses the subtopics within each topic. To then get a single-valued number representing the total distance across all topics we simply sum the squared subtopic distances, i.e.,
 
  \\[
-\mathcal{D}_t = \sqrt{\sum_t \mathcal{D}_t} \\; .
+\mathcal{D}_t = \sqrt{\sum_t \mathcal{D}^2_t} \\; .
 \\]
 
 Since the maximum separation between -1 and +1 is 2, _D_ total is divided by 2 so the final result is always between 0 and 1.
@@ -50,10 +50,13 @@ Since the maximum separation between -1 and +1 is 2, _D_ total is divided by 2 s
 \\[
 \mathcal{CS}_i = \cos\theta = \frac{\sum_i \omega^2_i U_i \cdot P_i}{\sqrt{\sum_i \omega^2_i U^2_i}\cdot \sqrt{\sum_i \omega^2_i P^2_i}} \\; , 
 \\]
+
 where \\(\mathcal{CS}_i\\) is the cosine similarity across each topic. To obtain an overall similarity score across all topics, I simply sum the per-topic values,
+
 \\[
 \mathcal{CS}_t = \sum_t \mathcal{CS}_i \\; ,
 \\]
+
 where I avoid squaring in order to preserve sign. Negative values reflect ideological misalignment.
 
 In both, the weights are globally normalized to ensure that the total result lies between [0,1] for the Euclidean distance and [-1,1] for the Cosine Similarity.
@@ -128,17 +131,17 @@ _Figure 2: Shows the resulting Euclidean Distance (ED) and Cosine Similarity (CS
 
 3. Numberline Plots 
 <img src="/images/numberline.png" alt="numline" width="500px" /> 
-Figure 3: Example numberline plots for Economic policy showing how your answers compare to the aggregated positions for each political party. These numberlines do not include weights.
+_Figure 3: Example numberline plots for Economic policy showing how your answers compare to the aggregated positions for each political party. These numberlines do not include weights._
 
 4. Radar Plot 
 <img src="/images/radar.png" alt="rad" width="500px" /> 
-Figure 4: Radar plot showing the weighted average position value across each topic compared to the party positions. Here the center point would represent -1 for all subtopic questions and the outer ring represents +1 for all subtopic positions.
+_Figure 4: Radar plot showing the weighted average position value across each topic compared to the party positions. Here the center point would represent -1 for all subtopic questions and the outer ring represents +1 for all subtopic positions._
 
 5. PCA Plots 
 <img src="/images/pca.png" alt="pca" width="500px" /> 
-Figure 5: 2D unweighted PCA plot representing your data along two principle components that explain the most variance in the data. The principle components might be interpretable as some political dimension like Economic, Social, etc. but it is better to think of the result simply being in an abstract space that captures party differences. Due to abstraction, it is important to interpret these cautiously.
+_Figure 5: 2D unweighted PCA plot representing your data along two principle components that explain the most variance in the data. The principle components might be interpretable as some political dimension like Economic, Social, etc. but it is better to think of the result simply being in an abstract space that captures party differences. Due to abstraction, it is important to interpret these cautiously._
 <img src="/images/pca3d.png" alt="pca3" width="500px" /> 
-Figure 6: Same as Figure 5 but with three principle components. Here it appears more obvious that the user vector’s (black arrow) tip is closest to liberal, as indicated by the Euclidean distance result, while the direction of the vector is pointing closer to the direction of the NDP (orange) vector, as indicated by the cosine similarity result.
+_Figure 6: Same as Figure 5 but with three principle components. Here it appears more obvious that the user vector’s (black arrow) tip is closest to liberal, as indicated by the Euclidean distance result, while the direction of the vector is pointing closer to the direction of the NDP (orange) vector, as indicated by the cosine similarity result._
 
 ## Conclusions 
 There are a number of cautionary notes I outlined in the introduction of the app, and I restate them here:
